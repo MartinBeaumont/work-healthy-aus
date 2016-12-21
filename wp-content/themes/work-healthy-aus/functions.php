@@ -71,6 +71,15 @@
   add_action( 'wp_enqueue_scripts', 'prelude_theme_scripts' );
 
   /**
+   * Get Google Fonts
+   *
+   */
+   function google_fonts(){
+     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Open+Sans:400,700', array(), THEME_VERSION );
+   }
+   add_action( 'wp_enqueue_scripts', 'google_fonts');
+
+  /**
    * Load menus
    */
   require get_template_directory() . '/inc/menus.php';
