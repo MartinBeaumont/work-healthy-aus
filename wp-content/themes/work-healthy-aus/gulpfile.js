@@ -2,7 +2,7 @@
   Gulpfile.js
 ------------------------------------------------------------------------------*/
 // Name your theme - this is outputted only when packaging your project.
-var theme        = 'your-theme-name';
+var theme        = 'work-healthy-aus';
 
 // Set the paths you will be working with
 var phpFiles     = ['./**/*.php', './*.php'],
@@ -13,7 +13,7 @@ var phpFiles     = ['./**/*.php', './*.php'],
     jsFiles      = ['./assets/js/theme.js'],
     imageFiles   = ['./assets/img/*.{jpg,png,gif,svg}'],
     concatFiles  = ['./assets/js/*.js', '!./assets/js/theme.min.js', '!./assets/js/all.js'],
-    url          = 'wp-dev:8888'; // See https://browsersync.io/docs/options/#option-proxy
+    url          = 'work-healthy-aus:8888'; // See https://browsersync.io/docs/options/#option-proxy
 
 // Include gulp
 var gulp         = require('gulp');
@@ -52,7 +52,8 @@ gulp.task('sass', function() {
       .pipe(plumber())
       .pipe(sass({
         includePaths: [
-          './node_modules/normalize-scss/sass/'
+          './node_modules/normalize-scss/sass/',
+          './node_modules/ginger-grid/'
         ]
       })
         .on('error', sass.logError))

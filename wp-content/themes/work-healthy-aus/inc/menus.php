@@ -8,6 +8,7 @@
         'primary' => __( 'Primary Menu', 'theme-slug' ),
         'footer'  => __( 'Footer Menu', 'theme-slug' ),
         'social'  => __( 'Social Menu', 'theme-slug' ),
+        'utility'  => __( 'Utility Menu', 'theme-slug' ),
       )
     );
   }
