@@ -3,12 +3,12 @@
 
 <footer class="container global-footer">
   <div class="row">
-    <div class="col-2 text-center">
+    <div class="sm-col-6 col-2 text-center">
       <a href="<?php echo get_home_url();?>/">
         <img src="<?php bloginfo('template_url');?>/assets/img/logo-white.svg" alt="Work Healthy Australia" class="footer--logo">
       </a>
     </div>
-    <div class="col-4 footer--info">
+    <div class="sm-col-6 col-4 footer--info">
       <?php the_field('address', 'option'); ?>
       <p>
         Phone: <?php the_field('phone_1', 'option'); ?> <br>
@@ -26,12 +26,12 @@
 
 <div class="container footer--copyright">
   <div class="row">
-    <div class="col-4">
+    <div class="sm-col-6 col-4">
       <span>
         Copyright &copy; <?php the_date('Y');?> All Rights Reserved
       </span>
     </div>
-    <div class="col-4 text-center">
+    <div class="col-4 text-center sm-text-left privacy-terms">
       <span>
         <strong>
           <a href="<?php echo get_home_url();?>/privacy-policy/">
@@ -44,7 +44,7 @@
         </strong>
       </span>
     </div>
-    <div class="col-4 text-right">
+    <div class="sm-col-6 col-4 text-right">
       <span>
         Site by <a href="https://factor1studios.com/" class="factor1">factor1</a>
       </span>

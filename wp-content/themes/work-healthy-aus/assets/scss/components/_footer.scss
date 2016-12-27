@@ -75,3 +75,17 @@
     color: $secondary;
   }
 }
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint){
+  .footer--nav{
+    ul{
+      li{
+        flex: 0 1 50%;
+      }
+    }
+  }
+  .privacy-terms{
+    order: -1;
+  }
+}
