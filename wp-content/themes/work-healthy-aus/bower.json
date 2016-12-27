@@ -1,6 +1,6 @@
 {
   "name": "work-healthy-aus",
-  "description": "Prelude is a Wordpress starter theme that helps you craft custom themes. It uses Gulp to compile and minify scss/css, concatenate and minify JS, compress images, and more.",
+  "description": "Prelude is a Wordpress starter theme that helps you craft custom themes.",
   "main": "index.php",
   "authors": [
     "Factor1 Studios <http://factor1studios.com>"
@@ -26,6 +26,6 @@
     "font-awesome": "^4.7.0",
     "slick-carousel": "^1.6.0",
     "sugar": "more-sugar#^1.0.5",
-    "nifty-nav": "^2.2.1"
+    "nifty-nav": "^2.2.2"
   }
 }
