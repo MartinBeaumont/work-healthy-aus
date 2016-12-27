@@ -128,6 +128,8 @@
 
 // Media Queries
 @media screen and (max-width: 765px){
+
+  // MAIN NAV 
   .main-nav{
     ul{
       li{
@@ -135,6 +137,14 @@
           font-size: 17px;
         }
       }
+    }
+  }
+
+  // UTILITY NAV
+  .utility-nav{
+    ul{
+      justify-content: center;
+      align-items: center;
     }
   }
 }
