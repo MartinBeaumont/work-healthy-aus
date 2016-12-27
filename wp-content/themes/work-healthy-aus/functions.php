@@ -108,3 +108,8 @@
    * Load shortcodes
    */
   require get_template_directory() . '/inc/shortcodes.php';
+
+  /**
+   * Load ACF Options
+   */
+  require get_template_directory() . '/inc/acf.php';
