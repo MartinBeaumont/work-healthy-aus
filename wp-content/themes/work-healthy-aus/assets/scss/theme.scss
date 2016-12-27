@@ -17,8 +17,15 @@
 @import 'settings/ginger-settings';
 @import 'ginger';
 
+// Font Awesome
+@import 'font-awesome.scss';
+
 // Variables
 @import 'settings/variables';
+
+// Nifty Nav
+@import 'settings/nifty-nav';
+@import 'nifty-nav';
 
 // Global Styles
 @import 'globals/global';
