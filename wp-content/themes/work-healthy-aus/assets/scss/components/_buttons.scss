@@ -1,0 +1,28 @@
+// Buttons
+.button{
+  display: inline-block;
+  position: relative;
+  font: 1rem $fira;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1rem;
+  padding: 12px 50px;
+  margin: 15px;
+  &--purple{
+    background-color: transparent;
+    border: 2px solid $purple;
+    color: $purple;
+    &:hover{
+      background-color: $gold;
+    }
+  }
+  &--white{
+    background-color: transparent;
+    border: 2px solid white;
+    color: $purple;
+    &:hover{
+      background-color: $primary;
+    }
+  }
+}
