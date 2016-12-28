@@ -63,3 +63,8 @@ img{
     height: 100%;
   }
 }
+
+::selection{
+  background: $secondary;
+  color: white
+}
