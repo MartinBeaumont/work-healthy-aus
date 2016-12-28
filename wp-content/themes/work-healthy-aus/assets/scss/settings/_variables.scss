@@ -18,6 +18,17 @@ $primary: $purple;
 $secondary: $orange;
 $tertiary: $drkPurple;
 
+@mixin orangeGradient(){
+  background: rgba(253,128,4,1);
+  background: -moz-linear-gradient(left, rgba(253,128,4,1) 0%, rgba(231,83,4,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(253,128,4,1)), color-stop(100%, rgba(231,83,4,1)));
+  background: -webkit-linear-gradient(left, rgba(253,128,4,1) 0%, rgba(231,83,4,1) 100%);
+  background: -o-linear-gradient(left, rgba(253,128,4,1) 0%, rgba(231,83,4,1) 100%);
+  background: -ms-linear-gradient(left, rgba(253,128,4,1) 0%, rgba(231,83,4,1) 100%);
+  background: linear-gradient(to right, rgba(253,128,4,1) 0%, rgba(231,83,4,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd8004', endColorstr='#e75304', GradientType=1 );
+}
+
 // Fonts
 $fira:      'Fira Sans', Arial, sans-serif;
 $open:      'Open Sans', Helvetica, sans-serif;

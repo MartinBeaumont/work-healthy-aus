@@ -20,9 +20,10 @@
   &--white{
     background-color: transparent;
     border: 2px solid white;
-    color: $purple;
+    color: white;
     &:hover{
       background-color: $primary;
+      color: white;
     }
   }
 }
