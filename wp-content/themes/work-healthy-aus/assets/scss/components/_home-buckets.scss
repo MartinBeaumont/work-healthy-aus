@@ -2,7 +2,7 @@
 
 .home--buckets{
   position: relative;
-  padding: 85px 0;
+  padding: 85px 0 5px;
   @include orangeGradient();
   h3, p{
     color: white;
