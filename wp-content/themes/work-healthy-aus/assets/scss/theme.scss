@@ -20,6 +20,10 @@
 // Font Awesome
 @import 'font-awesome.scss';
 
+// Slick Carousel
+@import 'slick/slick.scss';
+@import 'slick/slick-theme.scss';
+
 // Variables
 @import 'settings/variables';
 
@@ -39,6 +43,7 @@
 @import 'components/footer';
 @import 'components/home-header';
 @import 'components/home-buckets';
+@import 'components/stat-slider';
 
 // Plugin Overrides
 @import 'plugins/overrides';

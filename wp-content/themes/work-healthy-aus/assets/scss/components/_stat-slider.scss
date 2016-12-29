@@ -1,0 +1,38 @@
+// Stat Slider Template Part
+
+.stat-slider{
+  position: relative;
+  padding: 54px 0;
+  background: #fff url(../img/BG-WhiteSwoosh.png) center center no-repeat;
+  background-size: cover;
+  .slick-dots{
+    bottom: -55px;
+    li button:before{
+      font-size: 13px;
+    }
+  }
+  .slick-dotted.slick-slider {
+    margin: 55px auto;
+  }
+  .slick-next{
+    background: url(../img/arrow-right-gray.png) center center no-repeat;
+    width: 27px;
+    height: 43px;
+    &:before{
+      display: none;
+    }
+  }
+  .slick-prev{
+    background: url(../img/arrow-left-gray.png) center center no-repeat;
+    width: 27px;
+    height: 43px;
+    &:before{
+      display: none;
+    }
+  }
+  .slick-slide{
+    img{
+      margin: 0 auto;
+    }
+  }
+}
