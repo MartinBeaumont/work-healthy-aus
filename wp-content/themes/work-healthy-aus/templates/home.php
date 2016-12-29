@@ -11,4 +11,6 @@ get_template_part('parts/stat-slider');
 
 get_template_part('parts/featured-staff');
 
+get_template_part('parts/testimonials');
+
 get_footer();

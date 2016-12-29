@@ -1,0 +1,31 @@
+// Testimonials Template Part Styles
+
+.testimonials{
+  padding: 60px 0;
+  background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
+  background-size: cover;
+  h3{
+    margin: 0 auto;
+    padding: 0;
+    color: $gold;
+    font-style: italic;
+  }
+}
+
+.testimonial-text{
+  p{
+    font: 1.25rem $fira;
+    line-height: 1.5rem;
+    font-style: italic;
+    padding: 0 0 20px 0;
+    color: white;
+  }
+}
+
+.testimonial-citation{
+  p {
+    margin: 0 auto 20px;
+    padding: 0;
+    color: $gold;
+  }
+}

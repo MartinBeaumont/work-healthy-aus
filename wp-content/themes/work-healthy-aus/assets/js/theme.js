@@ -19,4 +19,13 @@ jQuery( document ).ready(function( $ ) {
     dots: true
   });
 
+  $('#testimonial-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 7000,
+    infinite: true,
+    slidesToShow: 1,
+    arrows: true,
+    dots: true
+  });
+
 });
