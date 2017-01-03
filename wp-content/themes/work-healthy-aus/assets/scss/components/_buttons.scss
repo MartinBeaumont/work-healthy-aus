@@ -7,7 +7,7 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 1rem;
-  padding: 12px 50px;
+  padding: 7px 40px;
   margin: 15px;
   &--purple{
     background-color: transparent;
@@ -15,14 +15,25 @@
     color: $purple;
     &:hover{
       background-color: $gold;
+      color: $purple;
     }
   }
   &--white{
     background-color: transparent;
     border: 2px solid white;
-    color: $purple;
+    color: white;
     &:hover{
       background-color: $primary;
+      color: white;
+    }
+  }
+  &--gold{
+    background-color: transparent;
+    border: 2px solid $gold;
+    color: $gold;
+    &:hover{
+      background-color: $primary;
+      color: $gold;
     }
   }
 }

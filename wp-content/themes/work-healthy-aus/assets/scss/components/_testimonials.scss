@@ -1,0 +1,64 @@
+// Testimonials Template Part Styles
+
+.testimonials{
+  padding: 60px 0;
+  background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
+  background-size: cover;
+  h3{
+    margin: 0 auto;
+    padding: 0;
+    color: $gold;
+    font-style: italic;
+  }
+  .slick-next{
+    background: url(../img/arrow-right-white.png) center center no-repeat;
+    width: 27px;
+    height: 43px;
+    right: -50px;
+    &:before{
+      display: none;
+    }
+  }
+  .slick-prev{
+    background: url(../img/arrow-left-white.png) center center no-repeat;
+    width: 27px;
+    height: 43px;
+    left: -50px;
+    &:before{
+      display: none;
+    }
+  }
+  .slick-dots button:before{
+    font-size: 18px;
+    color: white;
+  }
+  .slick-dots li.slick-active button:before{
+    color: $gold;
+  }
+}
+
+.testimonial-text{
+  p{
+    font: 1.25rem $fira;
+    line-height: 1.5rem;
+    font-style: italic;
+    padding: 0 0 20px 0;
+    color: white;
+  }
+}
+
+.testimonial-citation{
+  p {
+    margin: 0 auto 20px;
+    padding: 0;
+    color: $gold;
+  }
+}
+
+.testimonial-icon{
+  display: block;
+  margin: 0 auto 20px;
+  width: 65px;
+  height: auto;
+  max-width: 100%;
+}

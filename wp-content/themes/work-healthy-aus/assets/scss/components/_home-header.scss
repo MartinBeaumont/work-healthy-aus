@@ -1,0 +1,12 @@
+// Home Header Template Part
+
+.home--header{
+  h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 80px 20px;
+    span{
+      color: $secondary;
+    }
+  }
+}

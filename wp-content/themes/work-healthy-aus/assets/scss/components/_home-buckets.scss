@@ -1,0 +1,27 @@
+// Home Category Buckets Template Part
+
+.home--buckets{
+  position: relative;
+  padding: 85px 0 5px;
+  @include orangeGradient();
+  h3, p{
+    color: white;
+    padding: 0;
+  }
+  p{
+    margin: 25px 0 0;
+  }
+}
+
+.home--buckets-grid{
+  justify-content: center;
+}
+
+.home--bucket-col{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px 80px;
+}
