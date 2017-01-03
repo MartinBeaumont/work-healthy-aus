@@ -27,4 +27,13 @@
       color: white;
     }
   }
+  &--gold{
+    background-color: transparent;
+    border: 2px solid $gold;
+    color: $gold;
+    &:hover{
+      background-color: $primary;
+      color: $gold;
+    }
+  }
 }

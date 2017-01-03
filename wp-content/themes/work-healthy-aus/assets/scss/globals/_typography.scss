@@ -67,6 +67,13 @@ p{
   padding: 0 0 20px 0;
 }
 
+@mixin featured-text(){
+  font: 1.25rem $open;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0 0 20px;
+}
+
 // Links
 a{
   font-weight: bold;

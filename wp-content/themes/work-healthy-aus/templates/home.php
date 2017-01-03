@@ -13,4 +13,8 @@ get_template_part('parts/featured-staff');
 
 get_template_part('parts/testimonials');
 
+get_template_part('parts/cta');
+
+get_template_part('parts/industry-slider');
+
 get_footer();
