@@ -10,6 +10,31 @@
     color: $gold;
     font-style: italic;
   }
+  .slick-next{
+    background: url(../img/arrow-right-white.png) center center no-repeat;
+    width: 27px;
+    height: 43px;
+    right: -50px;
+    &:before{
+      display: none;
+    }
+  }
+  .slick-prev{
+    background: url(../img/arrow-left-white.png) center center no-repeat;
+    width: 27px;
+    height: 43px;
+    left: -50px;
+    &:before{
+      display: none;
+    }
+  }
+  .slick-dots button:before{
+    font-size: 18px;
+    color: white;
+  }
+  .slick-dots li.slick-active button:before{
+    color: $gold;
+  }
 }
 
 .testimonial-text{
@@ -28,4 +53,12 @@
     padding: 0;
     color: $gold;
   }
+}
+
+.testimonial-icon{
+  display: block;
+  margin: 0 auto 20px;
+  width: 65px;
+  height: auto;
+  max-width: 100%;
 }

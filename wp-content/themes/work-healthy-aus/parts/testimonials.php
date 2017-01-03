@@ -14,6 +14,11 @@ if( $query->have_posts() ):
 ?>
 
 <section class="container testimonials">
+	<div class="row">
+		<div class="col-6 col-centered text-center">
+			<img src="<?php bloginfo('template_url');?>/assets/img/quote-icon.svg" alt="Testimonials" class="testimonial-icon">
+		</div>
+	</div>
   <div class="row">
     <div class="col-10 col-centered text-center">
       <div id="testimonial-slider">
