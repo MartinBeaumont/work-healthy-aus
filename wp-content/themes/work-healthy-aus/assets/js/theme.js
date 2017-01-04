@@ -7,6 +7,15 @@ jQuery( document ).ready(function( $ ) {
 		$('body').removeClass('no-touch');
 	}
 
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top + -160
+      }, 500);
+      return false;
+  });
+
+
+
   // Nifty Nav
   //niftyNav();
 
