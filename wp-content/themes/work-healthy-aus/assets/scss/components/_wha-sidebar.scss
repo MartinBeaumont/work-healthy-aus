@@ -1,0 +1,28 @@
+// General Sidebar Styles
+
+.wha-sidebar{
+  ul{
+    margin: 30px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  a{
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 2px solid $ltGray;
+    &:after{
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      content: '\f061';
+      font-family: 'FontAwesome';
+      color: $ltGray;
+    }
+    &:hover{
+      &:after{
+        color: $secondary;
+      }
+    }
+  }
+}
