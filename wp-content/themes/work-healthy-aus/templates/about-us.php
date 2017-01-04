@@ -1,16 +1,8 @@
 <?php // Template Name: About Us
 get_header();
-?>
 
-<section class="container standard-hero">
-  <div class="row">
-    <div class="col-12">
-      <h1>
-        <?php the_field('page_headline'); ?>
-      </h1>
-    </div>
-  </div>
-</section>
+get_template_part('parts/standard-hero');
+?>
 
 <div class="container">
   <div class="row">
