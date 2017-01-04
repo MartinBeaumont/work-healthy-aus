@@ -29,26 +29,26 @@ get_header();
     <div class="col-4">
 
       <div class="row">
-        <div class="col-4">
+        <div class="sm-col-4 col-4">
           Phone:
         </div>
-        <div class="col-8">
+        <div class="sm-col-8 col-8">
           <?php the_field('phone_1', 'option'); ?>
         </div>
       </div>
       <div class="row">
-        <div class="col-4">
+        <div class="sm-col-4 col-4">
           Phone:
         </div>
-        <div class="col-8">
+        <div class="sm-col-8 col-8">
           <?php the_field('phone_2', 'option'); ?>
         </div>
       </div>
       <div class="row">
-        <div class="col-4">
+        <div class="sm-col-4 col-4">
           Fax:
         </div>
-        <div class="col-8">
+        <div class="sm-col-8 col-8">
           <?php the_field('fax', 'option'); ?>
         </div>
       </div>
@@ -58,18 +58,18 @@ get_header();
     <div class="col-4">
 
       <div class="row">
-        <div class="col-3">
+        <div class="sm-col-4 col-3">
           Address:
         </div>
-        <div class="col-9">
+        <div class="sm-col-8 col-9">
           <?php the_field('address', 'option'); ?>
         </div>
       </div>
       <div class="row">
-        <div class="col-3">
+        <div class="sm-col-4 col-3">
           Email:
         </div>
-        <div class="col-9">
+        <div class="sm-col-8 col-9">
           <a href="<?php echo get_field('email', 'option');?>">
             <?php the_field('email', 'option'); ?>
           </a>
