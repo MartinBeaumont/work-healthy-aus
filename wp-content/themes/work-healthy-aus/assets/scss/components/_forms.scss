@@ -1,0 +1,21 @@
+// Form Styles
+input[type=text], input[type=email], input[type=password], input[type=phone], textarea{
+  border: 2px solid $ltGray;
+  &:active, &:focus{
+    outline: none;
+    border: 2px solid $secondary;
+    box-shadow: 0 0 15px -2px $secondary;
+  }
+}
+
+input[type=submit]{
+  @extend .button;
+  @extend .button--purple;
+}
+
+.page-template-connect{
+  .industry-slider--section{
+    margin-top: 45px;
+    border-top: 2px solid $ltGray;
+  }
+}

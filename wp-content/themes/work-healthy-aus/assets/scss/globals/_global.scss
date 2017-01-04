@@ -68,3 +68,21 @@ img{
   background: $secondary;
   color: white
 }
+
+hr{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background: $ltGray;
+  margin: 50px auto;
+}
+
+// Standard Hero
+.standard-hero{
+  border-bottom: 2px solid $ltGray;
+  h1{
+    margin-bottom: 0;
+  }
+}
