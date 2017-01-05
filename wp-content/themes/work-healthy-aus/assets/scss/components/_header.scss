@@ -14,6 +14,7 @@
     justify-content: flex-end;
     align-items: center;
     li{
+      padding: 0;
       flex: 0 1 auto;
       position: relative;
       a{
@@ -50,6 +51,7 @@
     align-items: center;
     list-style: none;
     li{
+      padding: 0;
       position: relative;
       flex: 0 1 auto;
       a{
@@ -129,7 +131,7 @@
 // Media Queries
 @media screen and (max-width: 765px){
 
-  // MAIN NAV 
+  // MAIN NAV
   .main-nav{
     ul{
       li{

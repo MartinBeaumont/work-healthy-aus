@@ -65,6 +65,12 @@ p, ul, ol{
   color: $drkGray
 }
 
+ul{
+  li{
+    padding-bottom: 12px;
+  }
+}
+
 p{
   padding: 0 0 20px 0;
 }
