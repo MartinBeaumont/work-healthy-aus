@@ -1,0 +1,36 @@
+// Physicians Template Styles
+
+.region-label{
+  display: inline-block;
+  font: 16px $fira;
+  font-weight: bold;
+  color: $primary;
+}
+
+.staff-filter--row{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.dropdown-filter{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  border-radius: 0;
+  border: 2px solid $ltGray;
+  background: white url(../img/arrow-down-gray.svg) 98% 50% no-repeat;
+  background-size: 20px;
+  width: 628px;
+  height: 40px;
+  padding: 0 10px;
+  max-width: 100%;
+  margin-left: 15px;
+  font: 16px $open;
+  font-weight: 100;
+  color: $gray;
+  &:active, &:focus{
+    outline: none;
+    border: 2px solid $secondary;
+    box-shadow: 0 0 15px -2px $secondary;
+  }
+}
