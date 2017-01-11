@@ -41,6 +41,8 @@
 }
 
 .main-nav{
+  position: relative;
+  z-index: 9999;
   ul{
     display: flex;
     position: relative;
@@ -80,7 +82,7 @@
             position: relative;
             width: 100%;
             height: 100%;
-            padding: 14px 0;
+            padding: 14px 5px;
             background: white;
             font: 16px $fira;
             font-weight: bold;
