@@ -83,6 +83,10 @@ p{
   padding: 0 0 20px;
 }
 
+.featured-text{
+  @include featured-text();
+}
+
 // Links
 a{
   font-weight: bold;

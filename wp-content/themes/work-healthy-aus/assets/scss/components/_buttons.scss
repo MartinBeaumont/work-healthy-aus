@@ -36,4 +36,13 @@
       color: $gold;
     }
   }
+  &--orange{
+    background-color: transparent;
+    border: 2px solid $orange;
+    color: $orange;
+    &:hover{
+      background-color: $primary;
+      color: $orange;
+    }
+  }
 }

@@ -52,9 +52,34 @@ endif; wp_reset_postdata();
             </ul>
           </nav>
         </aside>
+        <div class="sidebar-cta text-center">
+          <div>
+            <span class="sidebar-cta--heading">
+              <?php the_field('sidebar_cta_headline'); ?>
+            </span>
+          </div>
+          <div>
+            <p class="featured-text">
+              <?php the_field('sidebar_cta_text');?>
+            </p>
+          </div>
+          <div>
+            <?php
+            // get button destination
+            if( get_field('sidebar_button_destination') === 'internal' ):
+              $sb_destination = get_field('sidebar_page_link');
+            else:
+              $sb_destination = get_field('sidebar_url');
+            endif;
+            ?>
+            <a href="<?php echo $sb_destination;?>" class="button button--orange">
+              <?php the_field('sidebar_button_text'); ?>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-8" style="margin-top: 37px;">
       <?php
         // Standard loop for goal page
         if( have_posts() ):
