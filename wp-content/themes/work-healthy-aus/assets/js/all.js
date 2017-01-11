@@ -87,10 +87,6 @@ jQuery( document ).ready(function( $ ) {
     }
   });
 
-  // var sticky = new Waypoint.Sticky({
-  //   element: $('#goal-sidebar-container')[0]
-  // });
-
 });
 
 /*
