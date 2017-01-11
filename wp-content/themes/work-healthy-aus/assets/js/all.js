@@ -65,11 +65,9 @@ jQuery( document ).ready(function( $ ) {
   var waypoint = new Waypoint({
     element: document.getElementById('service-sidebar'),
     handler: function(direction) {
-      console.log(direction+ ' hit');
 
+      // get sidebar width initially
       var $sidebar_width = $('#service-sidebar').width();
-
-      console.log($sidebar_width);
 
       // only fire on desktop
       if( window.innerWidth > 688 ){
