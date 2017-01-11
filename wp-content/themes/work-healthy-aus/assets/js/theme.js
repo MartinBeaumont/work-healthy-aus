@@ -61,4 +61,34 @@ jQuery( document ).ready(function( $ ) {
     ]
   });
 
+  // Sticky Sidebar
+  var waypoint = new Waypoint({
+    element: document.getElementById('service-sidebar'),
+    handler: function(direction) {
+      console.log(direction+ ' hit');
+
+      var $sidebar_width = $('#service-sidebar').width();
+
+      console.log($sidebar_width);
+
+      // only fire on desktop
+      if( window.innerWidth > 688 ){
+        if( direction === 'down' ){
+          $('#goal-sidebar-container').css({
+            'position': 'fixed',
+            'top':  0,
+            'width': $sidebar_width
+          });
+        } else{
+          $('#goal-sidebar-container').css('position', 'relative');
+        }
+      }
+
+    }
+  });
+
+  // var sticky = new Waypoint.Sticky({
+  //   element: $('#goal-sidebar-container')[0]
+  // });
+
 });

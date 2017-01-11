@@ -1,0 +1,85 @@
+<?php // Template Name: Goal
+get_header();
+
+get_template_part('parts/standard-hero');
+
+// setup post id's to pull
+$post_ids = get_field('post_selection');
+
+// WP_Query arguments
+$args = array(
+	'p'                 => $post_ids,
+  'post_type'         => array( 'services' ),
+);
+
+// The Query
+$query = new WP_Query( $args );
+
+if( $query->have_posts() ):
+
+  // setup empty array
+  $service_posts = [];
+
+  while( $query->have_posts() ):
+    $query->the_post();
+
+    // get post data
+    $post_title = get_the_title();
+    $post_content = get_the_content();
+
+    // put post data into the array
+    $service_posts[$post->ID] =  array($post->ID, $post_title, $post_content);
+
+  endwhile;
+
+endif; wp_reset_postdata();
+?>
+
+<section class="container">
+  <div class="row">
+    <div id="service-sidebar" class="col-4">
+      <div id="goal-sidebar-container">
+        <aside class="wha-sidebar">
+          <nav>
+            <ul>
+                <?php foreach ($service_posts as $service_post) { ?>
+                  <li>
+                    <a href="#<?php echo $service_post[0];?>">
+                      <?php echo $service_post[1]; ?>
+                    </a>
+                  </li>
+                <?php } ?>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+    </div>
+    <div class="col-8">
+      <?php
+        // Standard loop for goal page
+        if( have_posts() ):
+          while( have_posts() ):
+            the_post();
+            the_content();
+          endwhile;
+        endif;
+
+      foreach ($service_posts as $service_post) { ?>
+        <div id="<?php echo $service_post[0];?>" class="service-post">
+          <h2>
+            <?php echo $service_post[1]; ?>
+          </h2>
+          <?php
+          $content = $service_post[2];
+          $content = apply_filters('the_content', $content);
+          echo $content;
+          ?>
+        </div>
+      <?php }
+      ?>
+    </div>
+  </div>
+</section>
+
+<?php
+get_footer();
