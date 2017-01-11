@@ -1,28 +1,70 @@
 // General Sidebar Styles
 
 .wha-sidebar{
+  position: relative;
   ul{
+    display: block;
+    position: relative;
     margin: 30px 0 0;
     padding: 0;
     list-style: none;
+    li{
+      display: block;
+      position: relative;
+      padding-bottom: 0;
+    }
   }
   a{
     display: block;
     position: relative;
-    padding: 10px 0;
+    padding: 10px 32px 10px 10px;
     border-bottom: 2px solid $ltGray;
     &:after{
       display: inline-block;
       position: absolute;
+      top: 9px;
       right: 10px;
       content: '\f061';
       font-family: 'FontAwesome';
       color: $ltGray;
     }
     &:hover{
+      background-color: $gold;
+      color: $primary;
       &:after{
-        color: $secondary;
+        color: $primary;
       }
     }
   }
+}
+
+// Goal Page sidebar adjustments
+#service-sidebar.col-4, #goal-sidebar-container{
+  position: relative;
+}
+
+
+// Side bar CTA
+.sidebar-cta{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 362px;
+  margin-top: 60px;
+  padding: 55px 38px;
+  background: white url(../img/BG-SidebarSwoosh.png) center center no-repeat;
+  background-size: cover;
+  border: 1px solid $ltGray;
+}
+
+.sidebar-cta--heading{
+  display: block;
+  position: relative;
+  font: 3rem $fira;
+  font-weight: 700;
+  line-height: 3.5rem;
+  padding: 0 0 30px;
+  color: $orange;
 }

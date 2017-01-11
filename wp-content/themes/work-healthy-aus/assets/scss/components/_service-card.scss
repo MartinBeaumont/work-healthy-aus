@@ -1,0 +1,51 @@
+// Service Card styles
+
+.service-card-block{
+  margin: 0 0 40px;
+}
+
+.service-card{
+  display: block;
+  position: relative;
+  min-height: 100px;
+  padding: 13px 16px;
+  border: 1px solid $ltGray;
+  background-color: white;
+  margin-top: -1px;
+  h3{
+    margin: 0;
+    padding: 0;
+    &:after{
+      content: '\f061';
+      display: block;
+      position: absolute;
+      top: 13px;
+      right: 8px;
+      font-family: 'FontAwesome';
+      color: $purple;
+    }
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  &:hover{
+    background-color: $gold;
+  }
+}
+
+.service-card-col{
+  padding: 0;
+  &:nth-child(odd){
+    .service-card{
+      //border-right: none;
+    }
+  }
+}
+
+// service post container found on goal pages
+.service-post{
+  border-bottom: 1px solid $ltGray;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}

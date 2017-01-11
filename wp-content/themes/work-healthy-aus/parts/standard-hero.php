@@ -4,7 +4,12 @@
   <div class="row">
     <div class="col-12">
       <h1>
-        <?php the_field('page_headline'); ?>
+        <?php
+        if( is_page_template('templates/goal.php') ):
+          the_title();
+        else:
+          the_field('page_headline');
+        endif;?>
       </h1>
     </div>
   </div>
