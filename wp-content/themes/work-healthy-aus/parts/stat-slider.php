@@ -5,7 +5,7 @@ if( have_rows('stat_slider') ):
 
 <section class="container stat-slider">
   <div class="row">
-    <div class="col-10 col-centered">
+    <div class="col-10 sm-col-9 col-centered">
 
       <h2 class="text-center">
         <?php the_field('stat_slider_headline'); ?>

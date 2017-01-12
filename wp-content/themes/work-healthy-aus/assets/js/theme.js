@@ -25,7 +25,15 @@ jQuery( document ).ready(function( $ ) {
     infinite: true,
     slidesToShow: 2,
     arrows: true,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 688,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $('#testimonial-slider').slick({
