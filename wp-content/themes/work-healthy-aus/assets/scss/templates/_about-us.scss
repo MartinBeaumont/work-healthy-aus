@@ -45,3 +45,14 @@
     }
   }
 }
+
+@media screen and (max-width: $small-breakpoint){
+  #who-we-are.container{
+    ul{
+      margin-left: 20px;
+      li{
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

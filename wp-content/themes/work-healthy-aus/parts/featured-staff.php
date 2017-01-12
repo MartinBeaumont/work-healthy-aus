@@ -19,9 +19,9 @@ if( $query->have_posts() ):
 <section class="container featured-staff">
   <div class="row">
     <div class="col-10 col-centered">
-      <div class="sm-block-grid-2 block-grid-4">
+      <div class="sm-block-grid-1 block-grid-4">
         <?php while( $query->have_posts() ): $query->the_post(); ?>
-          <div class="col text-center">
+          <div class="col text-center featured-staff--col">
             <div class="featured-staff--image" style="background: url(<?php featuredURL('staff-thumb');?>) center center no-repeat;"></div>
             <p class="featured-staff--name">
               <?php

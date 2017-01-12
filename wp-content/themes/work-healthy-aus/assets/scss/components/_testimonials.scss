@@ -4,6 +4,8 @@
   padding: 60px 0;
   background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
   background-size: cover;
+  max-width: 100%;
+  overflow-x: hidden;
   h3{
     margin: 0 auto;
     padding: 0;
