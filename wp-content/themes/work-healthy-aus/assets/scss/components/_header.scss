@@ -1,6 +1,9 @@
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
+header{
+  position: relative;
+}
 
 .utility-nav{
   background: $primary;
@@ -125,6 +128,57 @@
         content: '\f078';
         font: 20px 'FontAwesome';
         color: $gray;
+      }
+    }
+  }
+}
+
+// Nifty Nav Styles
+.nifty-panel{
+  ul{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 0;
+    list-style: none;
+    li{
+      display: block;
+      position: relative;
+      a{
+        display: block;
+        min-height: 32px;
+        padding-right: 13px;
+        border-bottom: 1px solid $gray;
+        &:after{
+          content: '\f061';
+          display: block;
+          position: absolute;
+          top: 0px;
+          right: 10px;
+          font-family: 'FontAwesome';
+          color: $purple;
+        }
+      }
+      ul{
+        margin: 10px 0 0;
+        display: none;
+        li{
+          a{
+            display: block;
+            padding: 0 10px 10px;
+            color: $orange;
+            &:after{
+              display: none;
+            }
+          }
+        }
+      }
+      // last li
+      &:last-of-type{
+        a{
+          border-bottom: none;
+        }
       }
     }
   }

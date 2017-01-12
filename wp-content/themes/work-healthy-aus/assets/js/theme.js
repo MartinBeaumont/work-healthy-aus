@@ -7,17 +7,17 @@ jQuery( document ).ready(function( $ ) {
 		$('body').removeClass('no-touch');
 	}
 
+  // Fire Nifty Nav
+  niftyNav({
+    subMenus: true
+  });
+
   $('a').click(function(){
       $('html, body').animate({
           scrollTop: $( $(this).attr('href') ).offset().top + -160
       }, 500);
       return false;
   });
-
-
-
-  // Nifty Nav
-  //niftyNav();
 
   $('#stat-slider').slick({
     autoplay: true,
