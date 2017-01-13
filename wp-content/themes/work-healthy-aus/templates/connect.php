@@ -69,7 +69,7 @@ get_header();
         <div class="sm-col-4 col-3">
           Email:
         </div>
-        <div class="sm-col-8 col-9">
+        <div class="sm-col-12 col-9">
           <a href="<?php echo get_field('email', 'option');?>">
             <?php the_field('email', 'option'); ?>
           </a>
