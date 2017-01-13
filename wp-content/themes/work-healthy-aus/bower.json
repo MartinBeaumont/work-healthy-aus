@@ -26,6 +26,7 @@
     "font-awesome": "^4.7.0",
     "slick-carousel": "^1.6.0",
     "sugar": "more-sugar#^1.0.5",
-    "nifty-nav": "^2.2.2"
+    "nifty-nav": "^2.2.2",
+    "waypoints": "^4.0.1"
   }
 }

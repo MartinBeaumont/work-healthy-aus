@@ -29,6 +29,7 @@ h3{
   font-size: 1.25rem;
   line-height: 1.5rem;
   padding: 30px 0;
+  margin: 0;
   color: $primary;
 }
 
@@ -51,9 +52,10 @@ h5{
 }
 
 h6{
-  font-size: 1.05rem;
-  line-height: 1.3rem;
-  padding: 20px 0;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0;
+  text-transform: uppercase;
   color: $secondary;
 }
 
@@ -63,7 +65,14 @@ p, ul, ol{
   color: $drkGray
 }
 
+ul{
+  li{
+    padding-bottom: 12px;
+  }
+}
+
 p{
+  margin: 0;
   padding: 0 0 20px 0;
 }
 
@@ -72,6 +81,10 @@ p{
   line-height: 1.5rem;
   font-weight: 400;
   padding: 0 0 20px;
+}
+
+.featured-text{
+  @include featured-text();
 }
 
 // Links

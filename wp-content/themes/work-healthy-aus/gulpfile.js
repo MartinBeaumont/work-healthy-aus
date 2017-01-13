@@ -15,6 +15,9 @@ var phpFiles     = ['./**/*.php', './*.php'],
     concatFiles  = [
       './assets/js/*.js',
       './bower_components/slick-carousel/slick/slick.js',
+      './bower_components/waypoints/lib/jquery.waypoints.js',
+      './bower_components/waypoints/lib/shortcuts/sticky.js',
+      './bower_components/nifty-nav/src/js/nifty-nav.js',
       '!./assets/js/theme.min.js',
       '!./assets/js/all.js'
     ],

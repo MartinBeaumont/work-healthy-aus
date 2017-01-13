@@ -1,0 +1,58 @@
+// About Us Page Template
+
+.wwd-icon{
+  display: block;
+  margin: 0 auto;
+  margin-top: 35px;
+}
+
+.wwd-content{
+  h3{
+    color: $orange;
+  }
+}
+
+.wwd-row{
+  border-bottom: 2px solid $ltGray;
+  &:last-of-type{
+    border-bottom: none;
+  }
+}
+
+.wwd-full-img{
+  display: block;
+  margin: 0 auto;
+}
+
+.our-story{
+  padding-bottom: 50px;
+}
+
+// Who We Are
+#who-we-are.container{
+  padding: 60px 0;
+  ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    li{
+      flex: 0 1 50%;
+      padding: 0 10px 25px 0;
+    }
+  }
+}
+
+@media screen and (max-width: $small-breakpoint){
+  #who-we-are.container{
+    ul{
+      margin-left: 20px;
+      li{
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

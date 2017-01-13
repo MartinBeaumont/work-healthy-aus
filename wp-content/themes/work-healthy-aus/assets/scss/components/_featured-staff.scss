@@ -22,3 +22,10 @@
   margin: 20px auto;
   padding: 0;
 }
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint){
+  .featured-staff--col{
+    margin-bottom: 40px;
+  }
+}

@@ -5,7 +5,7 @@
     <div class="col-7">
       <?php the_field('cta_content'); ?>
     </div>
-    <div class="col-3">
+    <div class="col-3 sm-text-center">
       <?php
         if( get_field('cta_button_destination') === 'internal' ):
           $cta_link = get_field('cta_internal');

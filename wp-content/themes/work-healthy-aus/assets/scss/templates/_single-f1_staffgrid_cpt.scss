@@ -1,0 +1,27 @@
+// Staff Single Styles
+
+.staff-single-hero{
+  h1{
+    padding-bottom: 14px;
+  }
+  h3{
+    margin: 0 auto;
+    padding: 0 0 40px;
+    color: $gray;
+  }
+}
+
+.staff-single-img{
+  padding: 40px 0;
+}
+
+.staff-single-columns{
+  padding-bottom: 40px;
+  h3{
+    color: $secondary;
+    padding-bottom: 8px;
+  }
+  ul{
+    margin-top: 0;
+  }
+}

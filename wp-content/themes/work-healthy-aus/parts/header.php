@@ -28,3 +28,15 @@
     </div>
   </div>
 </header>
+
+<div class="nifty-panel">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav>
+          <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,8 +7,17 @@ jQuery( document ).ready(function( $ ) {
 		$('body').removeClass('no-touch');
 	}
 
-  // Nifty Nav
-  //niftyNav();
+  // Fire Nifty Nav
+  niftyNav({
+    subMenus: true
+  });
+
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top + -160
+      }, 500);
+      return false;
+  });
 
   $('#stat-slider').slick({
     autoplay: true,
@@ -16,7 +25,15 @@ jQuery( document ).ready(function( $ ) {
     infinite: true,
     slidesToShow: 2,
     arrows: true,
-    dots: true
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 688,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $('#testimonial-slider').slick({
@@ -50,6 +67,30 @@ jQuery( document ).ready(function( $ ) {
         }
       }
     ]
+  });
+
+  // Sticky Sidebar
+  var waypoint = new Waypoint({
+    element: document.getElementById('service-sidebar'),
+    handler: function(direction) {
+
+      // get sidebar width initially
+      var $sidebar_width = $('#service-sidebar').width();
+
+      // only fire on desktop
+      if( window.innerWidth > 688 ){
+        if( direction === 'down' ){
+          $('#goal-sidebar-container').css({
+            'position': 'fixed',
+            'top':  0,
+            'width': $sidebar_width
+          });
+        } else{
+          $('#goal-sidebar-container').css('position', 'relative');
+        }
+      }
+
+    }
   });
 
 });
