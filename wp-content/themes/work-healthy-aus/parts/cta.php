@@ -2,10 +2,10 @@
 
 <section class="call-to-action container">
   <div class="row row--justify-content-center">
-    <div class="col-7">
+    <div class="md-col-6 col-7">
       <?php the_field('cta_content'); ?>
     </div>
-    <div class="col-3 sm-text-center">
+    <div class="md-col-6 col-3 sm-text-center md-text-center">
       <?php
         if( get_field('cta_button_destination') === 'internal' ):
           $cta_link = get_field('cta_internal');

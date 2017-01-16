@@ -40,3 +40,5 @@ wp-content/wp-cache-config.php
 wflogs/
 
 wp-content/backupwordpress-*
+
+wp-config.php
