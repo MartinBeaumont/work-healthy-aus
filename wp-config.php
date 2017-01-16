@@ -13,22 +13,34 @@
  *
  * @package WordPress
  */
- 
+
 // Include local configuration
 if (file_exists(dirname(__FILE__) . '/local-config.php')) {
 	include(dirname(__FILE__) . '/local-config.php');
 }
 
-// Global DB config
+// Local DB config
+// if (!defined('DB_NAME')) {
+// 	define('DB_NAME', 'wha');
+// }
+// if (!defined('DB_USER')) {
+// 	define('DB_USER', 'root');
+// }
+// if (!defined('DB_PASSWORD')) {
+// 	define('DB_PASSWORD', 'root');
+// }
+
+// Staging DB
 if (!defined('DB_NAME')) {
-	define('DB_NAME', 'wha');
+	define('DB_NAME', 'factor1m_wha');
 }
 if (!defined('DB_USER')) {
-	define('DB_USER', 'root');
+	define('DB_USER', 'factor1m_wha');
 }
 if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', 'root');
+	define('DB_PASSWORD', 'ku93@;A#EVHb');
 }
+
 if (!defined('DB_HOST')) {
 	define('DB_HOST', 'localhost');
 }
