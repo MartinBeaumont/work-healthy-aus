@@ -13,7 +13,7 @@ Author URI: http://www.factor1studios.com
 */
 
 // Include ACF
-include_once( 'vendor/acf/acf.php' );
+include_once( 'vendor/acf-pro/acf.php' );
 
 // Get the ACF field group for the Staff plugin.
 include('fields.php');
