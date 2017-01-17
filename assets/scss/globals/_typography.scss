@@ -76,6 +76,16 @@ p{
   padding: 0 0 20px 0;
 }
 
+blockquote{
+  border-left: 5px solid $secondary;
+  margin-left: 0;
+  padding: 20px;
+  p{
+    padding: 0;
+    font-style: italic;
+  }
+}
+
 @mixin featured-text(){
   font: 1.25rem $open;
   line-height: 1.5rem;
