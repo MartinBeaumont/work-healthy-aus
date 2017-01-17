@@ -11,7 +11,7 @@
   <?php
   if( have_posts() ):
     while( have_posts() ): the_post(); ?>
-      <div class="row row--justify-content-center">
+      <div class="row row--justify-content-center index--post-row">
         <div class="col-2">
           <a href="<?php the_permalink();?>">
             <?php the_post_thumbnail('166x166'); ?>
