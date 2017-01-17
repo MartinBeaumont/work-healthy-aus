@@ -35,6 +35,11 @@
           <?php the_excerpt(); ?>
         </div>
       </div>
+      <div class="row index--row-divider">
+        <div class="col-8 col-centered">
+          <hr>
+        </div>
+      </div>
     <?php endwhile;
   else: ?>
     <div class="row">
