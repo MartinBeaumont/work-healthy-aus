@@ -23,7 +23,7 @@
               <?php the_title(); ?>
             </h3>
           </a>
-          <div class="index-meta">
+          <div class="post-meta">
             <span class="post-date">
               <?php the_time('d M Y'); ?>
             </span>
