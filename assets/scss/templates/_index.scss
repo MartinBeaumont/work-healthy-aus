@@ -21,7 +21,9 @@
     margin: 18px 0 36px;
   }
   &:last-of-type{
-    outline: 2px solid green;
+    hr{
+      display: none;
+    }
   }
 }
 
