@@ -1,3 +1,8 @@
+// Back in history
+function goBack() {
+  window.history.back();
+}
+
 jQuery( document ).ready(function( $ ) {
   'use strict';
 
