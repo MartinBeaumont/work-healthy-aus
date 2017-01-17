@@ -1,14 +1,11 @@
-<?php // Standard Page Hero
-
-$poop = true;
-?>
+<?php // Standard Page Hero ?>
 
 <section class="container standard-hero">
   <div class="row">
     <div class="col-12">
       <h1>
         <?php
-        if( $poop === true ):
+        if( is_404() ):
           echo 'Page Not Found';
         elseif( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
           the_title();
