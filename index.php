@@ -7,7 +7,7 @@
   get_template_part('parts/standard-hero');
 ?>
 
-<section class="container">
+<section class="container blog-container">
   <?php
   if( have_posts() ):
     while( have_posts() ): the_post(); ?>
