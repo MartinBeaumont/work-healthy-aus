@@ -5,7 +5,7 @@
     <div class="col-12">
       <h1>
         <?php
-        if( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
+        if( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' || is_404() ):
           the_title();
         else:
           the_field('page_headline');
