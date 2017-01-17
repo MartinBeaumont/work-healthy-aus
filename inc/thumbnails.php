@@ -26,4 +26,5 @@ if( function_exists('prelude_features') ){
   // Use add_image_size below to add additional thumbnail sizes
   add_image_size('staff-thumb', 246, 246, array('center', 'center'));
   add_image_size('733x400', 733, 400, array('center', 'center'));
+  add_image_size('166x166', 166, 166, array('center', 'center'));
 }

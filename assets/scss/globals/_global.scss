@@ -85,6 +85,13 @@ hr{
   h1{
     margin-bottom: 0;
   }
+  h2{
+    font: 20px $fira;
+    font-weight: bold;
+    color: $gray;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 // default page padding
