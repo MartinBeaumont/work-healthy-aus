@@ -7,7 +7,7 @@
     </div>
     <div class="md-col-6 col-3 sm-text-center md-text-center">
       <?php
-      $page_id = $post->ID;
+      $page_id = get_queried_object_id();
 
         if( get_field('cta_button_destination', $page_id) === 'internal' ):
           $cta_link = get_field('cta_internal', $page_id);
