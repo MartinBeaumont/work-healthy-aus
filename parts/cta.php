@@ -1,14 +1,15 @@
-<?php // CTA Template Part ?>
+<?php // CTA Template Part
+
+$page_id = get_queried_object_id();
+?>
 
 <section class="call-to-action container">
   <div class="row row--justify-content-center">
     <div class="md-col-6 col-7">
-      <?php the_field('cta_content'); ?>
+      <?php the_field('cta_content', $page_id); ?>
     </div>
     <div class="md-col-6 col-3 sm-text-center md-text-center">
       <?php
-      $page_id = get_queried_object_id();
-
         if( get_field('cta_button_destination', $page_id) === 'internal' ):
           $cta_link = get_field('cta_internal', $page_id);
         else:
