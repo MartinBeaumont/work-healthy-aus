@@ -50,6 +50,11 @@
       </div>
     </div>
   <?php endif;?>
+  <div class="row">
+    <div class="col-8 col-centered text-center">
+      <?php the_posts_pagination( array('mid_size' => 2) ); ?>
+    </div>
+  </div>
 </section>
 
 <?php
