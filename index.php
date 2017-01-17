@@ -19,13 +19,13 @@
         </div>
         <div class="col-6">
           <a href="<?php the_permalink();?>">
-            <h3 class="secondary">
+            <h3 class="secondary index--post-title">
               <?php the_title(); ?>
             </h3>
           </a>
           <div class="index-meta">
             <span class="post-date">
-              <?php the_time('M d, Y'); ?>
+              <?php the_time('d M Y'); ?>
             </span>
             |
             <span class="post-author">
