@@ -10,10 +10,12 @@ $poop = true;
         <?php
         if( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
           the_title();
+          echo 'this is goal or page template';
         elseif( $poop === true ):
           echo 'Page Not Found';
         else:
           the_field('page_headline');
+          echo 'else statement fired';
         endif;?>
       </h1>
     </div>
