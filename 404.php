@@ -1,20 +1,29 @@
 <?php
   /**
    * The 404 Not Found template.
-   * 
+   *
    * Used when WordPress encounters an unknown URL.
    */
   get_header();
+
+  get_template_part('parts/standard-hero');
 ?>
 
-  <section class="error-404">
-    <h1>Hmm, that page does not exist...</h1>
-    <p>Maybe you can find what you are looking for <a
-        href="<?php echo esc_url( home_url( '/' ) ); ?>">here</a>.</p>
-    <p>Or try searching below...</p>
-    <?php get_search_form(); ?>
-  </section>
+<section class="container default-container">
+  <div class="row">
+    <div class="col-11 col-centered">
+      <img src="http://unsplash.it/1200/600/?random" alt="Page not found">
+    </div>
+    <div class="col-10 col-centered">
+      <h2>
+        This page does not exist
+      </h2>
+      <a href="<?php echo get_home_url();?>/">
+        Go back home
+      </a>
+    </div>
+  </div>
+</section>
 
 <?php
-  get_sidebar();
   get_footer();
