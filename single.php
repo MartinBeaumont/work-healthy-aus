@@ -37,9 +37,9 @@
       </div>
       <div class="row">
         <div class="col-8 col-centered text-center">
-          <a href="#" class="button button--purple" onclick="goBack()">
+          <button class="button button--purple" onClick="goBack()">
             Back
-          </a>
+          </button>
         </div>
       </div>
     </section>
