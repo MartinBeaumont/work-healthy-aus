@@ -7,7 +7,9 @@
         <?php
         if( is_404() ):
           echo 'Page Not Found';
-        elseif( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' || is_home() ):
+        elseif( is_home() ):
+          echo 'Blog';
+        elseif( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
           the_title();
         else:
           the_field('page_headline');
