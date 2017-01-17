@@ -53,4 +53,6 @@
 </section>
 
 <?php
+  get_template_part('parts/cta');
+
   get_footer();
