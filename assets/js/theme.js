@@ -1,8 +1,5 @@
-// Back in history
-function goBack() {
-  window.history.back();
-}
 
+// on DOM Ready
 jQuery( document ).ready(function( $ ) {
   'use strict';
 
@@ -97,5 +94,10 @@ jQuery( document ).ready(function( $ ) {
 
     }
   });
+
+  // Back in history
+  function goBack() {
+    window.history.back();
+  }
 
 });
