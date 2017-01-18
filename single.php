@@ -44,6 +44,13 @@
       </div>
     </section>
 
+    <script>
+      // Back in history
+      var goBack = function(){
+        window.history.back();
+      };
+    </script>
+
 <?php
     endwhile;
   endif;
