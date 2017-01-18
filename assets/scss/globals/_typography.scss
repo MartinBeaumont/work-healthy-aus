@@ -77,12 +77,17 @@ p{
 }
 
 blockquote{
-  border-left: 5px solid $secondary;
-  margin-left: 0;
-  padding: 20px;
+  padding: 60px 0;
+  background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  overflow-x: hidden;
   p{
-    padding: 0;
+    font: 1.25rem $fira;
+    line-height: 1.5rem;
     font-style: italic;
+    padding: 0 0 20px 0;
+    color: white;
   }
 }
 
