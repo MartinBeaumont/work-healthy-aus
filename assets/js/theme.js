@@ -98,6 +98,6 @@ jQuery( document ).ready(function( $ ) {
   // Back in history
   var goBack = function(){
     window.history.back();
-  }
+  };
 
 });
