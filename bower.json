@@ -1,0 +1,32 @@
+{
+  "name": "work-healthy-aus",
+  "description": "Prelude is a Wordpress starter theme that helps you craft custom themes.",
+  "main": "index.php",
+  "authors": [
+    "Factor1 Studios <http://factor1studios.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Wordpress",
+    "Theme",
+    "Blank",
+    "Prelude",
+    "Factor1"
+  ],
+  "homepage": "https://github.com/factor1/work-healthy-aus",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.6.0",
+    "sugar": "more-sugar#^1.0.5",
+    "nifty-nav": "^2.2.2",
+    "waypoints": "^4.0.1"
+  }
+}

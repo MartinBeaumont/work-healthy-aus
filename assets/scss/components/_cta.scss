@@ -1,0 +1,19 @@
+// CTA Template Part Styles
+
+.call-to-action{
+  padding: 55px 0 35px;
+  @include orangeGradient();
+  p{
+    @include featured-text();
+    color: white;
+  }
+  h1,h2,h3,h4,h5,h6{
+    padding: 15px 0 0;
+    color: white;
+  }
+  .button{
+    padding-left: 0;
+    padding-right: 0;
+    width: 250px;
+  }
+}

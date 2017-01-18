@@ -1,0 +1,127 @@
+/*------------------------------------------------------------------------------
+  Typography
+------------------------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $fira;
+  margin: 0;
+}
+
+h1{
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  padding: 50px;
+  margin: 0 auto 30px;
+  font-weight: 700;
+  text-align: center;
+  color: $primary;
+}
+
+h2{
+  font-size: 1.875rem;
+  line-height: 2rem;
+  padding: 30px 0;
+  font-weight: 700;
+  color: $primary;
+}
+
+h3{
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 30px 0;
+  margin: 0;
+  color: $primary;
+}
+
+h3.secondary{
+  color: $secondary;
+}
+
+h4{
+  font-size: 1.15rem;
+  line-height: 1.4rem;
+  padding: 20px 0;
+  color: $primary;
+}
+
+h5{
+  font-size: 1.05rem;
+  line-height: 1.3rem;
+  padding: 20px 0;
+  color: $primary;
+}
+
+h6{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0;
+  text-transform: uppercase;
+  color: $secondary;
+}
+
+p, ul, ol{
+  font: 1rem $open;
+  line-height: 1.25rem;
+  color: $drkGray
+}
+
+ul{
+  li{
+    padding-bottom: 12px;
+  }
+}
+
+p{
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+blockquote{
+  position: relative;
+  margin: 30px 0;
+  padding: 170px 8.3333% 60px;
+  background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  p{
+    text-align: center;
+    font: 1.25rem $fira;
+    line-height: 1.5rem;
+    font-style: italic;
+    padding: 0 0 20px 0;
+    color: white;
+  }
+  &:before{
+    display: block;
+    position: absolute;
+    margin-left: -33.5px;
+    left: 50%;
+    top: 55px;
+    content: '';
+    width: 67px;
+    height: 73px;
+    background: url(../img/quote-icon.svg) center center no-repeat;
+    background-size: contain;
+  }
+}
+
+@mixin featured-text(){
+  font: 1.25rem $open;
+  line-height: 1.5rem;
+  font-weight: 400;
+  padding: 0 0 20px;
+}
+
+.featured-text{
+  @include featured-text();
+}
+
+// Links
+a{
+  font-weight: bold;
+  color: $primary;
+  text-decoration: none;
+  &:hover{
+    color: $secondary;
+  }
+}

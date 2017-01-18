@@ -1,0 +1,48 @@
+// Buttons
+.button{
+  display: inline-block;
+  position: relative;
+  font: 1rem $fira;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1rem;
+  padding: 7px 40px;
+  margin: 15px;
+  &--purple{
+    background-color: transparent;
+    border: 2px solid $purple;
+    color: $purple;
+    &:hover{
+      background-color: $gold;
+      color: $purple;
+    }
+  }
+  &--white{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    &:hover{
+      background-color: $primary;
+      color: white;
+    }
+  }
+  &--gold{
+    background-color: transparent;
+    border: 2px solid $gold;
+    color: $gold;
+    &:hover{
+      background-color: $primary;
+      color: $gold;
+    }
+  }
+  &--orange{
+    background-color: transparent;
+    border: 2px solid $orange;
+    color: $orange;
+    &:hover{
+      background-color: $primary;
+      color: $orange;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Connect Template
+
+// content container
+.connect--content{
+  margin: 36px auto 0;
+}
+
+// connect details sections
+.connect--details, .connect--details p{
+  font: 16px $fira;
+  font-weight: bold;
+  color: $primary;
+  margin: 0 auto 0;
+  padding-bottom: 0;
+}

@@ -1,0 +1,91 @@
+/*------------------------------------------------------------------------------
+  Footer
+------------------------------------------------------------------------------*/
+
+.global-footer{
+  padding: 50px 0 35px;
+  background: $primary;
+}
+
+.footer--logo{
+  display: block;
+  position: relative;
+  width: 97px;
+  max-width: 100%;
+}
+
+.footer--info{
+  p{
+    font: 12px $open;
+    color: white;
+  }
+}
+
+.footer--nav{
+  ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    li{
+      flex: 0 1 33.33333%;
+      min-width: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  a{
+    display: block;
+    font: 12px $open;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 0 13px;
+    &:hover{
+      color: $secondary;
+    }
+  }
+}
+
+.footer--copyright{
+  padding: 5px 0;
+  background: $drkPurple;
+  span{
+    font: 10px $open;
+    color: white;
+  }
+  a{
+    color: white;
+    &:hover{
+      color: $secondary;
+    }
+  }
+}
+
+.factor1{
+  font: 10px Helvetica;
+  font-weight: bold;
+  text-transform: -1px;
+  color: white;
+  &:hover{
+    color: $secondary;
+  }
+}
+
+// Media Queries
+@media screen and (max-width: $small-breakpoint){
+  .footer--nav{
+    ul{
+      li{
+        flex: 0 1 50%;
+      }
+    }
+  }
+  .privacy-terms{
+    order: -1;
+  }
+}

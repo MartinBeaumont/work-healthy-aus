@@ -1,0 +1,65 @@
+// Staff Card Component Styles
+
+.staff-card{
+  display: block;
+  position: relative;
+  border: 2px solid $ltGray;
+  margin-bottom: 26px;
+  cursor: pointer;
+  &:hover{
+    .staff-card--details{
+      &:after{
+        color: $primary;
+      }
+    }
+    .staff-card--name{
+      color: $primary;
+    }
+  }
+}
+
+.staff-card--image{
+  display: block;
+  position: relative;
+  height: 275px;
+  width: 100%;
+  background-size: cover !important;
+}
+
+.staff-card--details{
+  position: relative;
+  padding: 25px;
+  &:after{
+    content: '\f061';
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 19px;
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    color: $ltGray;
+  }
+}
+
+.staff-card--name{
+  margin: 0 0 13px;
+  padding: 0;
+  color: $drkGray;
+}
+
+.staff-card--title{
+  margin: 0;
+  padding: 0;
+  color: $drkGray;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.staff-card--image.all-staff{
+  height: 250px;
+}
+
+.staff-card--name.all-staff{
+  margin: 0;
+  padding: 0;
+}

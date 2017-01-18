@@ -1,0 +1,48 @@
+// Blog Index Styles
+
+// adjust hero
+.blog{
+  .standard-hero{
+    h1{
+      padding-bottom: 0;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.blog-container{
+  padding: 28px 0;
+}
+
+// post rows
+.index--row-divider{
+  hr{
+    padding: 0;
+    margin: 18px 0 36px;
+  }
+  &:last-of-type{
+    hr{
+      display: none;
+    }
+  }
+}
+
+// Post titles
+.index--post-title{
+  padding: 0 0 12px;
+  &:hover{
+    color: $primary;
+  }
+}
+
+.post-meta{
+  display: block;
+  font: 16px $open;
+  font-weight: normal;
+  color: $gray;
+  margin: 0 0 15px;
+}
+
+.post-date, .post-author{
+  font-style: italic;
+}

@@ -1,0 +1,67 @@
+/*-----------------------------------------------------------------------------
+  Table of Contents
+  - Vendor
+  - Globals
+  - Plugins
+  - Pages
+  - Parts
+  - Components
+-----------------------------------------------------------------------------*/
+// import the Sass partials in the order that you need here
+
+// vendor
+@import 'normalize';
+@include normalize();
+
+// Ginger
+@import 'settings/ginger-settings';
+@import 'ginger';
+
+// Font Awesome
+@import 'font-awesome.scss';
+
+// Slick Carousel
+@import 'slick/slick.scss';
+@import 'slick/slick-theme.scss';
+
+// Variables
+@import 'settings/variables';
+
+// Nifty Nav
+@import 'settings/nifty-nav';
+@import 'nifty-nav';
+
+// Global Styles
+@import 'globals/global';
+@import 'globals/wordpress';
+@import 'globals/typography';
+
+// Components
+@import 'components/buttons';
+@import 'components/social-menu';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/home-header';
+@import 'components/home-buckets';
+@import 'components/stat-slider';
+@import 'components/featured-staff';
+@import 'components/testimonials';
+@import 'components/cta';
+@import 'components/industry-slider';
+@import 'components/forms';
+@import 'components/wha-sidebar';
+@import 'components/staff-card';
+@import 'components/service-card';
+@import 'components/home-hero';
+
+// Templates
+@import 'templates/connect';
+@import 'templates/about-us';
+@import 'templates/our-team';
+@import 'templates/physicians';
+@import 'templates/single-f1_staffgrid_cpt';
+@import 'templates/index';
+@import 'templates/single';
+
+// Plugin Overrides
+@import 'plugins/overrides';

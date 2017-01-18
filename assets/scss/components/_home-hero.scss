@@ -1,0 +1,16 @@
+// Home Hero Styles
+
+.video-container{
+  display: block;
+  position: relative;
+  //height: 375px;
+  overflow: hidden;
+  @include aspect-ratio(16,4);
+  //outline: 2px solid red;
+  z-index: 999999;
+  video{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
