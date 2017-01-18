@@ -77,7 +77,8 @@ p{
 }
 
 blockquote{
-  padding: 60px 0;
+  margin: 30px 0;
+  padding: 170px 8.3333% 60px;
   background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -88,6 +89,18 @@ blockquote{
     font-style: italic;
     padding: 0 0 20px 0;
     color: white;
+  }
+  &:before{
+    display: block;
+    position: absolute;
+    margin-left: -33.5px;
+    left: 50%;
+    top: 55px;
+    content: '';
+    width: 67px;
+    height: 73px;
+    background: url(../img/quote-icon.svg) center center no-repeat;
+    background-size: contain;
   }
 }
 
