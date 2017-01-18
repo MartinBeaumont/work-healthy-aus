@@ -96,7 +96,7 @@ jQuery( document ).ready(function( $ ) {
   });
 
   // Back in history
-  function goBack() {
+  var goBack = function(){
     window.history.back();
   }
 
