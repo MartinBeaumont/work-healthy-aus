@@ -72,33 +72,33 @@ jQuery( document ).ready(function( $ ) {
   });
 
   // Sticky Sidebar
-  var waypoint = new Waypoint({
-    element: document.getElementById('service-sidebar'),
-    handler: function(direction) {
-
-      // get sidebar width initially
-      var $sidebar_width = $('#service-sidebar').width();
-
-      // only fire on desktop
-      if( window.innerWidth > 688 ){
-        if( direction === 'down' ){
-          $('#goal-sidebar-container').css({
-            'position': 'fixed',
-            'top':  0,
-            'width': $sidebar_width
-          });
-        } else{
-          $('#goal-sidebar-container').css('position', 'relative');
-        }
-      }
-
-    }
-  });
+  // var waypoint = new Waypoint({
+  //   element: document.getElementById('service-sidebar'),
+  //   handler: function(direction) {
+  //
+  //     // get sidebar width initially
+  //     var $sidebar_width = $('#service-sidebar').width();
+  //
+  //     // only fire on desktop
+  //     if( window.innerWidth > 688 ){
+  //       if( direction === 'down' ){
+  //         $('#goal-sidebar-container').css({
+  //           'position': 'fixed',
+  //           'top':  0,
+  //           'width': $sidebar_width
+  //         });
+  //       } else{
+  //         $('#goal-sidebar-container').css('position', 'relative');
+  //       }
+  //     }
+  //
+  //   }
+  // });
 
   // Back in history
   var goBack = function(){
     window.history.back();
-  }
+  };
 
 });
 
