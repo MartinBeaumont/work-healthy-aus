@@ -77,13 +77,14 @@ p{
 }
 
 blockquote{
+  position: relative;
   margin: 30px 0;
   padding: 170px 8.3333% 60px;
   background: $primary url(../img/BG-PurpleSwoosh.png) center center no-repeat;
   background-size: cover;
   max-width: 100%;
-  overflow-x: hidden;
   p{
+    text-align: center;
     font: 1.25rem $fira;
     line-height: 1.5rem;
     font-style: italic;
