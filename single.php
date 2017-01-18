@@ -18,7 +18,7 @@
             the_post_thumbnail('954x560');
           endif;
           ?>
-          <h2>
+          <h2 class="single-title">
             <?php the_title(); ?>
           </h2>
           <div class="post-meta">
@@ -30,7 +30,9 @@
               <?php the_author(); ?>
             </span>
 
-            <?php the_content(); ?>
+            <div class="single--content">
+              <?php the_content(); ?>
+            </div>
 
           </div>
         </article>
