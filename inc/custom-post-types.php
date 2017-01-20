@@ -36,7 +36,7 @@
   		'filter_items_list'     => __( 'Filter Services list', 'text_domain' ),
   	);
   	$rewrite = array(
-  		'slug'                  => 'services',
+  		'slug'                  => 'individual-services',
   		'with_front'            => true,
   		'pages'                 => true,
   		'feeds'                 => true,
