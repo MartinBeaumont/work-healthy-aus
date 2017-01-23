@@ -18,7 +18,7 @@ if( $query->have_posts() ):
 <section id="leadership-staff-grid" class="container">
   <div class="row">
     <div class="col-12">
-      <div class="sm-block-grid-1 block-grid-2">
+      <div class="sm-block-grid-1 block-grid-3">
         <?php while( $query->have_posts() ): $query->the_post(); ?>
           <div class="col">
 
