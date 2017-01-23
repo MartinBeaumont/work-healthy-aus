@@ -23,7 +23,7 @@ if( $query->have_posts() ):
           <div class="col">
 
             <a href="<?php the_permalink();?>" class="staff-card">
-              <div class="staff-card--image" style="background: url(<?php featuredURL();?>) center center no-repeat;"></div>
+              <div class="staff-card--image" style="background: url(<?php featuredURL('leadership-staff-thumb');?>) center center no-repeat;"></div>
               <div class="staff-card--details">
                 <h3 class="staff-card--name">
                   <?php

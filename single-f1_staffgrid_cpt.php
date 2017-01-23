@@ -19,7 +19,7 @@ get_header();
   <?php if( has_post_thumbnail() ): ?>
     <div class="row">
       <div class="col-8 col-centered text-center staff-single-img">
-        <?php the_post_thumbnail('733x400'); ?>
+        <?php the_post_thumbnail('733x400_CT'); ?>
       </div>
     </div>
   <?php endif;?>
