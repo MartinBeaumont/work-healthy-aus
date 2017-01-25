@@ -49,12 +49,13 @@ jQuery( document ).ready(function( $ ) {
 
   $('#industry-slider').slick({
     autoplay: true,
-    autoplaySpeed: 7000,
+    autoplaySpeed: 2000,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
     dots: false,
+    pauseOnHover: false,
     responsive: [
       {
         breakpoint: 976,
