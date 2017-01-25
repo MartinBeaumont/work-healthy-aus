@@ -28,7 +28,7 @@
   <div class="row">
     <div class="sm-col-6 col-4">
       <span>
-        Copyright &copy; <?php the_date('Y');?> All Rights Reserved
+        Copyright &copy; <?php date('Y');?> All Rights Reserved
       </span>
     </div>
     <div class="col-4 text-center sm-text-left privacy-terms">
