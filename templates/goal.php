@@ -33,9 +33,10 @@ if( $query->have_posts() ):
   endwhile;
 
 	echo '<pre>';
+	print_r($post_ids);
 	print_r($service_posts);
 	echo '</pre>';
-	
+
 endif; wp_reset_postdata();
 ?>
 
