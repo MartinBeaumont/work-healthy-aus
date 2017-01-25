@@ -8,8 +8,9 @@ $post_ids = get_field('post_selection');
 
 // WP_Query arguments
 $args = array(
-	'p'                 => $post_ids,
+	//'p'                 => $post_ids,
   'post_type'         => array( 'services' ),
+	'post__in'					=> array( $post_ids )
 );
 
 // The Query
