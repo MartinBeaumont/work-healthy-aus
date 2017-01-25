@@ -11,11 +11,16 @@
 	.wp-core-ui .button-primary {
     background: #E75300;
     border-color: #E75300 #E75300 #E75300;
-    -webkit-box-shadow: 0 1px 0 #006799;
-    box-shadow: 0 1px 0 #006799;
+    -webkit-box-shadow: 0 1px 0 #a23a00;
+    box-shadow: 0 1px 0 #a23a00;
     color: #fff;
     text-decoration: none;
-    text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+    text-shadow: 0 -1px 1px #a23a00, 1px 0 1px #a23a00, 0 1px 1px #a23a00, -1px 0 1px #a23a00;
+}
+
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover{
+	background: #cc4b02;
+	border-color: #cc4b02 #cc4b02 #cc4b02;
 }
 
 	h1 a {
