@@ -39,6 +39,8 @@ if( $query->have_posts() ):
 	echo '</pre>';
 
 endif; wp_reset_postdata();
+
+/*
 ?>
 
 <section class="container">
@@ -113,4 +115,5 @@ endif; wp_reset_postdata();
 </section>
 
 <?php
+*/
 get_footer();
