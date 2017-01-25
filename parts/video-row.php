@@ -9,5 +9,3 @@
     </div>
   </div>
 </section>
-
-<?php endif; wp_reset_postdata();
