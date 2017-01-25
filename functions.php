@@ -113,3 +113,8 @@
    * Load ACF Options
    */
   require get_template_directory() . '/inc/acf.php';
+
+  /**
+   * Load Login Styles
+   */
+  require get_template_directory() . '/inc/login-styles.php';
