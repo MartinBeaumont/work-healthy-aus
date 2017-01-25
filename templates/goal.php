@@ -14,7 +14,7 @@ echo '</pre>';
 $args = array(
 	//'p'                 => $post_ids,
   //'post_type'         => array( 'services' ),
-	'post__in'					=> $post_ids
+	'post__in'					=> array($post_ids)
 );
 
 // The Query
