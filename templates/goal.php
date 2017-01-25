@@ -12,9 +12,9 @@ echo '</pre>';
 
 // WP_Query arguments
 $args = array(
-	//'p'                 => $post_ids,
   'post_type'         => array( 'services' ),
-	//'post__in'					=> array($post_ids)
+	//'post__in'					=> array($post_ids),
+		'p'                 => $post_ids,
 );
 
 // The Query
