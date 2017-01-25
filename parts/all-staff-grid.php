@@ -4,7 +4,7 @@
 $args = array(
     'post_type'             => array( 'f1_staffgrid_cpt' ),
     'posts_per_page'        => -1,
-    'orderby'               => 'menu_order',
+    'orderby'               => 'title',
     'order'                 => 'ASC',
     'tax_query'             => array(
       array(

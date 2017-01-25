@@ -31,4 +31,5 @@ if( function_exists('prelude_features') ){
   add_image_size('733x400_CT', 733, 400, array('center', 'top'));
   add_image_size('166x166', 166, 166, array('center', 'center'));
   add_image_size('954x560', 954, 560, array('center', 'center'));
+  add_image_size('380x510', 380, 510, array('center', 'top'));
 }
