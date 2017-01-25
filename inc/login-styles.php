@@ -7,7 +7,7 @@
 	h1 a {
 		height: 100% !important;
 		width:100% !important;
-		background-image: url('.get_bloginfo('template_directory').'/img/logo.svg) !important;
+		background-image: url('.get_bloginfo('template_directory').'/assets/img/logo.svg) !important;
 		background-postion-x: center !important;
 		background-size:100% !important;
 		margin-bottom:10px !important; }
