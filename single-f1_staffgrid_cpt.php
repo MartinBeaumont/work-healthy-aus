@@ -25,7 +25,7 @@ get_header();
       </div>
     </div>
   <div class="row staff-single-columns">
-    <div class="col-8">
+    <div class="col-12">
       <?php the_field('left_column'); ?>
     </div>
   </div>
