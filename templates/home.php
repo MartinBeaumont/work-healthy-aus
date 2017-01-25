@@ -9,7 +9,7 @@ get_template_part('parts/home-buckets');
 
 get_template_part('parts/stat-slider');
 
-get_template_part('parts/featured-staff');
+get_template_part('parts/video-row');
 
 get_template_part('parts/testimonials');
 
