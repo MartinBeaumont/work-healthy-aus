@@ -6,15 +6,10 @@ get_template_part('parts/standard-hero');
 // setup post id's to pull
 $post_ids = get_field('post_selection');
 
-echo '<pre>';
-	print_r($post_ids);
-echo '</pre>';
-
 // WP_Query arguments
 $args = array(
   'post_type'         => array( 'services' ),
 	'post__in'					=> $post_ids,
-	//'p'                 => $post_ids,
 );
 
 // The Query
@@ -36,10 +31,6 @@ if( $query->have_posts() ):
     $service_posts[$post->ID] =  array($post->ID, $post_title, $post_content);
 
   endwhile;
-
-	echo '<pre>';
-	print_r($service_posts);
-	echo '</pre>';
 
 endif; wp_reset_postdata();
 
