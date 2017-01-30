@@ -34,12 +34,12 @@
     <div class="col-4 text-center sm-text-left privacy-terms">
       <span>
         <strong>
-          <a href="<?php echo get_home_url();?>/privacy-policy/">
-            Privacy Policy
+          <a href="<?php echo get_home_url();?>/privacy-statement/">
+            Privacy Statement
           </a>
           |
-          <a href="<?php echo get_home_url();?>/terms-conditions/">
-            Terms & Conditions
+          <a href="<?php echo get_home_url();?>/legal-notices/">
+            Legal Notices
           </a>
         </strong>
       </span>
