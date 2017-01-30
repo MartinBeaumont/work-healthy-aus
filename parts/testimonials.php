@@ -5,6 +5,7 @@ $args = array(
 	'post_type'              => array( 'simple_testimonials' ),
 	'nopaging'               => false,
 	'posts_per_page'         => '5',
+	'orderby'								 => 'rand'
 );
 
 // The Query
