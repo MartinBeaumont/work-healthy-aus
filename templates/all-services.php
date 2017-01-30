@@ -26,6 +26,12 @@ get_template_part('parts/explore-category');
 
 get_template_part('parts/testimonials');
 
-get_template_part('parts/cta');
+$page_id = get_queried_object_id();
+
+if( get_field('cta_content', $page_id); ):
+
+  get_template_part('parts/cta');
+
+endif;
 
 get_footer();
