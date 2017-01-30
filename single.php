@@ -21,7 +21,7 @@
           <h2 class="single--title">
             <?php the_title(); ?>
           </h2>
-          
+
           <?php // if its not a post type of service
           if( !is_singular('services') ):
           ?>
@@ -63,7 +63,13 @@
 
   // if it is a services single view show the cta
   if( is_singular('services') ):
-    get_template_part('parts/cta');
+    $page_id = get_queried_object_id();
+
+    if( get_field('cta_content', $page_id) ):
+
+      get_template_part('parts/cta');
+
+    endif;
   endif;
 
   get_footer();
