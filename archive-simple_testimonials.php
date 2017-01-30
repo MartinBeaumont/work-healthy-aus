@@ -12,6 +12,9 @@
   if( have_posts() ):
     while( have_posts() ): the_post(); ?>
       <div class="row row--justify-content-center index--post-row">
+        <div class="col-6 col-centered text-center">
+          <img src="<?php bloginfo('template_url');?>/assets/img/quote-icon.svg" alt="Testimonials" class="testimonial-icon">
+        </div>
         <div class="col-10 col-centered text-center">
           <div class="testimonial-text">
             <?php the_field('testimonial'); ?>
