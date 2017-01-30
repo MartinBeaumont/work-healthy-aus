@@ -14,6 +14,7 @@ echo '</pre>';
 $args = array(
   'post_type'         => array( 'services' ),
 	'post__in'					=> $post_ids,
+  'orderby'           => 'none'
 );
 
 // The Query
