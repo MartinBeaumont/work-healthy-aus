@@ -6,10 +6,6 @@ get_template_part('parts/standard-hero');
 // setup post id's to pull
 $post_ids = get_field('post_selection');
 
-echo '<pre>';
-print_r($post_ids);
-echo '</pre>';
-
 // WP_Query arguments
 $args = array(
   'post_type'         => array( 'services' ),
