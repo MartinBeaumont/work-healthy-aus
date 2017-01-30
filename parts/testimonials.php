@@ -46,7 +46,7 @@ if( $query->have_posts() ):
   </div>
 	<div class="row">
 		<div class="col-10 col-centered text-center">
-			<a href="<?php echo get_home_url();?>/testimonials/">
+			<a href="<?php echo get_home_url();?>/testimonials/" class="button button--orange">
 				See what others are saying
 			</a>
 		</div>
