@@ -34,7 +34,7 @@ get_header();
 <?php
 $page_id = get_queried_object_id();
 
-if( get_field('cta_content', $page_id); ):
+if( get_field('cta_content', $page_id) ):
 
   get_template_part('parts/cta');
 
