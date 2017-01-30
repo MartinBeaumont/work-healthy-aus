@@ -21,6 +21,7 @@
           <h2 class="single--title">
             <?php the_title(); ?>
           </h2>
+          
           <?php // if its not a post type of service
           if( !is_singular('services') ):
           ?>
@@ -32,12 +33,12 @@
               <span class="post-author">
                 <?php the_author(); ?>
               </span>
+          <?php endif;?>
 
               <div class="single--content">
                 <?php the_content(); ?>
               </div>
             </div>
-          <?php endif;?>
         </article>
       </div>
       <div class="row">
