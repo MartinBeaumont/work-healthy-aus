@@ -29,10 +29,12 @@
   </div>
 </header>
 
-<div id="search-panel" class="container">
-  <div class="row">
-    <div class="col-12 text-center">
-      Search
+<div id="search-panel" class="search-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        Search
+      </div>
     </div>
   </div>
 </div>

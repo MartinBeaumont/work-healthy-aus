@@ -1,8 +1,9 @@
 // Search Panel Styles
 
-#search-panel.container{
+.search-container{
   display: none;
   position: absolute;
+  z-index: 9999;
   top: 27px;
   left: 0;
   background: $primary;
