@@ -1,6 +1,17 @@
 // Client Template
 
+.client-grid{
+  justify-content: center;
+}
+
 // Client Grid Container
 .client-grid--container{
   padding: 25px;
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+  h3{
+    padding: 18px 0 0;
+  }
 }

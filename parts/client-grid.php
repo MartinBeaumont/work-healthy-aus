@@ -6,7 +6,7 @@ if( have_rows('client_grid') ):
 <section class="container">
   <div class="row">
     <div class="col-12">
-      <div class="sm-block-grid-1 block-grid-3">
+      <div class="sm-block-grid-1 block-grid-3 client-grid">
         <?php
         while( have_rows('client_grid') ): the_row();
         // get acf image size
