@@ -1,0 +1,10 @@
+// Search Panel Styles
+
+#search-panel.container{
+  display: none;
+  position: absolute;
+  top: 27px;
+  left: 0;
+  background: $primary;
+  padding: 40px 0;
+}
