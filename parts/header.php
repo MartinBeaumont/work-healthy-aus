@@ -29,6 +29,14 @@
   </div>
 </header>
 
+<div id="search-panel" class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      Search
+    </div>
+  </div>
+</div>
+
 <div class="nifty-panel">
   <div class="container">
     <div class="row">

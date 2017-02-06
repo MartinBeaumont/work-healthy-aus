@@ -101,7 +101,10 @@ jQuery( document ).ready(function( $ ) {
 
   // Add Search
   $('#menu-utility').append('<li><a href="#" id="search-icon"><i class="fa fa-search"></i> Search</a></li>');
-  console.log('test');
+
+  $('#search-icon').on('click', function(){
+    $('#search-panel').slideToggle(300);
+  });
 
 });
 
