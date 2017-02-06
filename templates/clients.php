@@ -24,4 +24,13 @@ get_template_part('parts/standard-hero');
 <?php
 get_template_part('parts/client-grid');
 
+// cta section
+$page_id = get_queried_object_id();
+
+if( get_field('cta_content', $page_id) ):
+
+  get_template_part('parts/cta');
+
+endif;
+
 get_footer();
