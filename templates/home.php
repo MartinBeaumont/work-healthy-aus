@@ -11,8 +11,6 @@ get_template_part('parts/stat-slider');
 
 get_template_part('parts/video-row');
 
-get_template_part('parts/testimonials');
-
 $page_id = get_queried_object_id();
 
 if( get_field('cta_content', $page_id) ):
