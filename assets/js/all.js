@@ -109,7 +109,7 @@ jQuery( document ).ready(function( $ ) {
 
   // Click outside of search container
   $(document).click(function(event) {
-    if(!$(event.target).closest('#search-panel').length) {
+    if( !$(event.target).closest('#search-panel').length || !$(event.target).closest('#search-icon').length ) {
       $('#search-panel').slideUp(300);
     }
 });
