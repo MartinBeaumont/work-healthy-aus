@@ -12,26 +12,12 @@
   if( have_posts() ):
     while( have_posts() ): the_post(); ?>
       <div class="row row--justify-content-center index--post-row">
-        <div class="col-2">
-          <a href="<?php the_permalink();?>">
-            <?php the_post_thumbnail('166x166'); ?>
-          </a>
-        </div>
-        <div class="col-6">
+        <div class="col-8">
           <a href="<?php the_permalink();?>">
             <h3 class="secondary index--post-title">
               <?php the_title(); ?>
             </h3>
           </a>
-          <div class="post-meta">
-            <span class="post-date">
-              <?php the_time('d M Y'); ?>
-            </span>
-            |
-            <span class="post-author">
-              <?php the_author(); ?>
-            </span>
-          </div>
           <?php the_excerpt(); ?>
         </div>
       </div>
