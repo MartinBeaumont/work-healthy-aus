@@ -44,14 +44,6 @@ get_header();
           <?php the_field('phone_2', 'option'); ?>
         </div>
       </div>
-      <div class="row">
-        <div class="sm-col-4 col-4">
-          Fax:
-        </div>
-        <div class="sm-col-8 col-8">
-          <?php the_field('fax', 'option'); ?>
-        </div>
-      </div>
 
     </div>
 

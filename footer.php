@@ -12,8 +12,7 @@
       <?php the_field('address', 'option'); ?>
       <p>
         Phone: <?php the_field('phone_1', 'option'); ?> <br>
-        Phone: <?php the_field('phone_2', 'option'); ?> <br>
-        Fax: <?php the_field('fax', 'option'); ?>
+        Phone: <?php the_field('phone_2', 'option'); ?>
       </p>
     </div>
     <div class="col-6">
