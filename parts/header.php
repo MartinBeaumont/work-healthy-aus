@@ -37,6 +37,9 @@
       </div>
     </div>
   </div>
+  <div class="close-search">
+    <i class="fa fa-times"></i>
+  </div>
 </div>
 
 <div class="nifty-panel">
