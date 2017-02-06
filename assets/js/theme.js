@@ -102,12 +102,17 @@ jQuery( document ).ready(function( $ ) {
   // Add Search
   $('#menu-utility').append('<li><a href="#" id="search-icon"><i class="fa fa-search"></i> Search</a></li>');
 
+  // Search Icon on Click
   $('#search-icon').on('click', function(){
     $('#search-panel').slideToggle(300);
   });
 
-  // $('.close-search').on('click', function(){
-  //   $('#search-panel').slideUp(300);
-  // });
+  // Click outside of search container
+  $(document).click(function(event) {
+    if(!$(event.target).closest('#search-panel').length) {
+      $('#search-panel').slideUp(300);
+    }
+})
+
 
 });
