@@ -112,7 +112,7 @@ jQuery( document ).ready(function( $ ) {
     if(!$(event.target).closest('#search-panel').length) {
       $('#search-panel').slideUp(300);
     }
-})
+});
 
 
 });
