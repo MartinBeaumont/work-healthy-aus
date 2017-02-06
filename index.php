@@ -23,15 +23,6 @@
               <?php the_title(); ?>
             </h3>
           </a>
-          <div class="post-meta">
-            <span class="post-date">
-              <?php the_time('d M Y'); ?>
-            </span>
-            |
-            <span class="post-author">
-              <?php the_author(); ?>
-            </span>
-          </div>
           <?php the_excerpt(); ?>
         </div>
       </div>
