@@ -11,10 +11,10 @@
           echo 'News';
         elseif( is_post_type_archive('simple_testimonials') ):
           echo 'Testimonials';
-        elseif( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
-          the_title();
         elseif ( is_search() ):
           echo 'Search Results';
+        elseif( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
+          the_title();
         else:
           the_field('page_headline');
         endif;?>
