@@ -33,7 +33,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        Search
+        <?php get_search_form(); ?>
       </div>
     </div>
   </div>
