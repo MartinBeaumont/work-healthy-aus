@@ -106,8 +106,8 @@ jQuery( document ).ready(function( $ ) {
     $('#search-panel').slideToggle(300);
   });
 
-  $('.close-search').on('click', function(){
-    $('#search-panel').slideUp(300);
-  });
+  // $('.close-search').on('click', function(){
+  //   $('#search-panel').slideUp(300);
+  // });
 
 });
