@@ -12,12 +12,7 @@
   if( have_posts() ):
     while( have_posts() ): the_post(); ?>
       <div class="row row--justify-content-center index--post-row">
-        <div class="col-2">
-          <a href="<?php the_permalink();?>">
-            <?php the_post_thumbnail('166x166'); ?>
-          </a>
-        </div>
-        <div class="col-6">
+        <div class="col-8">
           <a href="<?php the_permalink();?>">
             <h3 class="secondary index--post-title">
               <?php the_title(); ?>
