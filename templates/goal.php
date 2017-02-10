@@ -8,8 +8,9 @@ $post_ids = get_field('post_selection');
 
 // WP_Query arguments
 $args = array(
-	'p'                 => $post_ids,
   'post_type'         => array( 'services' ),
+	'post__in'					=> $post_ids,
+  'orderby'           => 'post__in'
 );
 
 // The Query
@@ -33,6 +34,8 @@ if( $query->have_posts() ):
   endwhile;
 
 endif; wp_reset_postdata();
+
+
 ?>
 
 <section class="container">
@@ -107,4 +110,5 @@ endif; wp_reset_postdata();
 </section>
 
 <?php
+
 get_footer();

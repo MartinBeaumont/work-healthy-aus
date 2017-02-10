@@ -29,6 +29,16 @@
   </div>
 </header>
 
+<div id="search-panel" class="search-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <?php get_search_form(); ?>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="nifty-panel">
   <div class="container">
     <div class="row">

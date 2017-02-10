@@ -1,4 +1,6 @@
-<?php // Template Name: All Services
+<?php
+/* Template Name: Clients */
+
 get_header();
 
 get_template_part('parts/standard-hero');
@@ -6,7 +8,7 @@ get_template_part('parts/standard-hero');
 
 <section class="container">
   <div class="row">
-    <div class="col-8 col-centered" style="margin-top: 45px;">
+    <article class="col-10 col-centered">
       <?php
       if( have_posts() ):
         while( have_posts() ):
@@ -15,17 +17,14 @@ get_template_part('parts/standard-hero');
         endwhile;
       endif;
       ?>
-    </div>
+    </article>
   </div>
 </section>
 
 <?php
-get_template_part('parts/goals');
+get_template_part('parts/client-grid');
 
-get_template_part('parts/explore-category');
-
-get_template_part('parts/testimonials');
-
+// cta section
 $page_id = get_queried_object_id();
 
 if( get_field('cta_content', $page_id) ):

@@ -5,6 +5,7 @@ $args = array(
 	'post_type'              => array( 'simple_testimonials' ),
 	'nopaging'               => false,
 	'posts_per_page'         => '5',
+	'orderby'								 => 'rand'
 );
 
 // The Query
@@ -43,6 +44,13 @@ if( $query->have_posts() ):
       </div>
     </div>
   </div>
+	<div class="row">
+		<div class="col-10 col-centered text-center">
+			<a href="<?php echo get_home_url();?>/testimonials/" class="button button--orange" style="margin-top: 20px;">
+				See what others are saying
+			</a>
+		</div>
+	</div>
 </section>
 
 <?php endif; wp_reset_postdata();

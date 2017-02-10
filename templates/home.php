@@ -9,11 +9,15 @@ get_template_part('parts/home-buckets');
 
 get_template_part('parts/stat-slider');
 
-get_template_part('parts/featured-staff');
+get_template_part('parts/video-row');
 
-get_template_part('parts/testimonials');
+$page_id = get_queried_object_id();
 
-get_template_part('parts/cta');
+if( get_field('cta_content', $page_id) ):
+
+  get_template_part('parts/cta');
+
+endif;
 
 get_template_part('parts/industry-slider');
 

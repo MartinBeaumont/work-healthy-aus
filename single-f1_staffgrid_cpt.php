@@ -16,24 +16,28 @@ get_header();
 </section>
 
 <section class="container">
-  <?php if( has_post_thumbnail() ): ?>
     <div class="row">
-      <div class="col-8 col-centered text-center staff-single-img">
-        <?php the_post_thumbnail('733x400'); ?>
+      <div class="col-4 text-center staff-single-img">
+        <?php the_post_thumbnail('380x510'); ?>
+      </div>
+      <div class="col-8 staff-single-columns">
+        <?php the_field('right_column'); ?>
       </div>
     </div>
-  <?php endif;?>
   <div class="row staff-single-columns">
-    <div class="col-8">
+    <div class="col-12">
       <?php the_field('left_column'); ?>
-    </div>
-    <div class="col-4">
-      <?php the_field('right_column'); ?>
     </div>
   </div>
 </section>
 
 <?php
-get_template_part('parts/cta');
+$page_id = get_queried_object_id();
+
+if( get_field('cta_content', $page_id) ):
+
+  get_template_part('parts/cta');
+
+endif;
 
 get_footer();

@@ -8,7 +8,11 @@
         if( is_404() ):
           echo 'Page Not Found';
         elseif( is_home() ):
-          echo 'Blog';
+          echo 'News';
+        elseif( is_post_type_archive('simple_testimonials') ):
+          echo 'Testimonials';
+        elseif ( is_search() ):
+          echo 'Search Results';
         elseif( is_page_template('templates/goal.php') || basename(get_page_template()) === 'page.php' ):
           the_title();
         else:
@@ -18,7 +22,7 @@
 
       <?php if( is_home() ): ?>
         <h2>
-          Copy here about blog.
+          The latest news in workplace health and wellness
         </h2>
       <?php endif; ?>
 

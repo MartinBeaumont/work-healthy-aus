@@ -44,7 +44,7 @@
 @import 'components/home-header';
 @import 'components/home-buckets';
 @import 'components/stat-slider';
-@import 'components/featured-staff';
+@import 'components/video-row';
 @import 'components/testimonials';
 @import 'components/cta';
 @import 'components/industry-slider';
@@ -53,6 +53,7 @@
 @import 'components/staff-card';
 @import 'components/service-card';
 @import 'components/home-hero';
+@import 'components/search-panel';
 
 // Templates
 @import 'templates/connect';
@@ -62,6 +63,8 @@
 @import 'templates/single-f1_staffgrid_cpt';
 @import 'templates/index';
 @import 'templates/single';
+@import 'templates/archive-simple_testimonials';
+@import 'templates/clients';
 
 // Plugin Overrides
 @import 'plugins/overrides';

@@ -12,8 +12,7 @@
       <?php the_field('address', 'option'); ?>
       <p>
         Phone: <?php the_field('phone_1', 'option'); ?> <br>
-        Phone: <?php the_field('phone_2', 'option'); ?> <br>
-        Fax: <?php the_field('fax', 'option'); ?>
+        Phone: <?php the_field('phone_2', 'option'); ?>
       </p>
     </div>
     <div class="col-6">
@@ -28,18 +27,18 @@
   <div class="row">
     <div class="sm-col-6 col-4">
       <span>
-        Copyright &copy; <?php the_date('Y');?> All Rights Reserved
+        Copyright &copy; <?php echo date('Y');?> All Rights Reserved
       </span>
     </div>
     <div class="col-4 text-center sm-text-left privacy-terms">
       <span>
         <strong>
-          <a href="<?php echo get_home_url();?>/privacy-policy/">
-            Privacy Policy
+          <a href="<?php echo get_home_url();?>/privacy-statement/">
+            Privacy Statement
           </a>
           |
-          <a href="<?php echo get_home_url();?>/terms-conditions/">
-            Terms & Conditions
+          <a href="<?php echo get_home_url();?>/legal-notices/">
+            Legal Notices
           </a>
         </strong>
       </span>

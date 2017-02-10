@@ -23,6 +23,10 @@ if( have_rows('industry_slider', 'option') ):
         <?php endwhile;?>
       </div>
 
+      <p>
+        <?php the_field('industry_slider_text', 'option'); ?>
+      </p>
+
     </div>
   </div>
 </section>

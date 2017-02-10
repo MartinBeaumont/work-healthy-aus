@@ -1,6 +1,6 @@
 <?php
 
-  define( 'THEME_VERSION', '0.1.1' );
+  define( 'THEME_VERSION', '0.3.1' );
 
   if ( !function_exists( 'prelude_features' ) ) {
 
@@ -113,3 +113,8 @@
    * Load ACF Options
    */
   require get_template_directory() . '/inc/acf.php';
+
+  /**
+   * Load Login Styles
+   */
+  require get_template_directory() . '/inc/login-styles.php';

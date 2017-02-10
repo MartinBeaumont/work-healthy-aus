@@ -7,18 +7,27 @@
   get_template_part('parts/standard-hero');
 ?>
 
-<section class="container blog-container">
+<section class="container archive-container">
   <?php
   if( have_posts() ):
     while( have_posts() ): the_post(); ?>
       <div class="row row--justify-content-center index--post-row">
-        <div class="col-8">
-          <a href="<?php the_permalink();?>">
-            <h3 class="secondary index--post-title">
+        <div class="col-6 col-centered text-center">
+          <img src="<?php bloginfo('template_url');?>/assets/img/quote-icon.svg" alt="Testimonials" class="testimonial-icon">
+        </div>
+        <div class="col-10 col-centered text-center">
+          <div class="testimonial-text">
+            <?php the_field('testimonial'); ?>
+          </div>
+
+          <div class="testimonial-citation">
+            <h3>
               <?php the_title(); ?>
             </h3>
-          </a>
-          <?php the_excerpt(); ?>
+            <p>
+              <?php the_field('citation');?>
+            </p>
+          </div>
         </div>
       </div>
       <div class="row index--row-divider">
@@ -31,7 +40,7 @@
     <div class="row">
       <div class="col-8 col-centered text-center">
         <h3>
-          Sorry, no posts where found.
+          Sorry, no testimonials were found, or there was an error...
         </h3>
       </div>
     </div>
