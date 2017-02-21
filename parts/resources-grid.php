@@ -25,7 +25,7 @@ if( have_posts() ):
                  <span class="staff-card--title">
                    <?php
                    $terms = get_terms(array(
-                     'taxonomy'   => 'resource_category'
+                     'taxonomy'   => 'resource_category',
                      'hide_empty' => false,
                    ) );
 
