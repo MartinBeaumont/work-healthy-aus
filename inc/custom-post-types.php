@@ -163,7 +163,7 @@ function resources_cpt() {
 		'description'           => __( 'A custom post type for resources.', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		'taxonomies'            => array( 'resource_category' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
