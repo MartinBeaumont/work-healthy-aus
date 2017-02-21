@@ -29,15 +29,29 @@ if( have_posts() ):
                      'hide_empty' => false,
                    ) );
 
-                   echo '<pre>';
-                   print_r($terms);
-                   echo '</pre>';
+                  //  echo '<pre>';
+                  //  print_r($terms);
+                  //  echo '</pre>';
 
-                  //  if( !empty($terms) && !is_wp_error( $terms ) ):
-                  //    foreach( $terms as $term ):
-                  //      echo '<a href="' . $term->link . '"'
-                  //    endforeach;
-                  //  endif;
+                   if( !empty($terms) && !is_wp_error( $terms ) ):
+
+                     // setup counts
+                     $count = 0;
+                     $i = 0;
+                     $term_list = '';
+
+                     // for each term
+                     foreach( $terms as $term ):
+                       $i++;
+                       $term_list .= '<a href="' . esc_url( get_term_link($term) ) . '" alt="' . $term->name . '">' . $term->name . '</a>';
+
+                       $count != $i ? $term_list .= ', ' : '';
+
+                     endforeach;
+
+                     echo $term_list;
+
+                   endif;
                    ?>
                  </span>
                  <?php the_excerpt(); ?>
