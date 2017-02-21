@@ -8,7 +8,7 @@ if( have_posts() ):
        <div class="sm-block-grid-1 block-grid-3">
          <?php while( have_posts() ): the_post(); ?>
            <div class="col resources--grid-item">
-             <a href="<?php the_permalink();?>" class="staff-card resources--item-container">
+             <divclass="staff-card resources--item-container">
 
                <?php if( has_post_thumbnail() ): ?>
                  <div class="resources--item-image">
@@ -57,7 +57,7 @@ if( have_posts() ):
                  <?php the_excerpt(); ?>
                </div>
 
-             </a>
+             </div>
            </div>
          <?php endwhile;?>
        </div>
