@@ -8,6 +8,9 @@ if( have_rows('home_buckets') ):
         <?php while( have_rows('home_buckets') ): the_row(); ?>
           <div class="col stretch text-center">
             <div class="home--bucket-col">
+              <div class="home--bucket-icon">
+                <img src="<?php the_sub_field('icon'); ?>" alt="" role="presentation">
+              </div>
               <h3>
                 <?php the_sub_field('headline'); ?>
               </h3>
