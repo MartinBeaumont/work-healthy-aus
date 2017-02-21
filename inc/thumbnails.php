@@ -33,5 +33,5 @@ if( function_exists('prelude_features') ){
   add_image_size('954x560', 954, 560, array('center', 'center'));
   add_image_size('380x510', 380, 510, array('center', 'top'));
   add_image_size('client-grid', 328, 210, array('center', 'center'));
-  add_image_size('356x200' 356, 200, array('center', 'center'));
+  add_image_size('356x200', 356, 200, array('center', 'center'));
 }
