@@ -1,6 +1,6 @@
 <?php
 
-  define( 'THEME_VERSION', '0.3.1' );
+  define( 'THEME_VERSION', '0.3.2' );
 
   if ( !function_exists( 'prelude_features' ) ) {
 
