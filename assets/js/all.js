@@ -112,9 +112,19 @@ jQuery( document ).ready(function( $ ) {
     if( !$(event.target).closest('#search-panel').length && !$(event.target).closest('#search-icon').length ) {
       $('#search-panel').slideUp(300);
     }
-});
+  });
 
+  // Form Gating
+  var url = document.location.href.indexOf('#form_submitted') > -1;
 
+  if(url){
+    $('.resource-download').css('display','block');
+    $('.form-gate').css('display','none');
+  } else{
+    $('.resource-download').css('display','none');
+  }
+
+// end dom ready 
 });
 
 /*
