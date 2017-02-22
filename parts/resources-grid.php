@@ -26,12 +26,8 @@ if( have_posts() ):
                    <?php
                    $terms = get_terms(array(
                      'taxonomy'   => 'resource_category',
-                     'hide_empty' => false,
+                     'hide_empty' => true,
                    ) );
-
-                  //  echo '<pre>';
-                  //  print_r($terms);
-                  //  echo '</pre>';
 
                    if( !empty($terms) && !is_wp_error( $terms ) ):
 
