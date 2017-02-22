@@ -40,6 +40,8 @@ if( have_posts() ):
                      $i = 0;
                      $term_list = '';
 
+                     $count = count($terms);
+
                      // for each term
                      foreach( $terms as $term ):
                        $i++;
