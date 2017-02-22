@@ -24,10 +24,7 @@ if( have_posts() ):
                  </h3>
                  <span class="staff-card--title">
                    <?php
-                   $terms = get_terms(array(
-                     'taxonomy'   => 'resource_category',
-                     'hide_empty' => true,
-                   ) );
+                   $terms = get_the_terms( get_the_ID(), 'resource_category');
 
                    if( !empty($terms) && !is_wp_error( $terms ) ):
 
