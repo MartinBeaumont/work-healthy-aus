@@ -8,7 +8,7 @@ if( have_posts() ):
        <div class="sm-block-grid-1 block-grid-3">
          <?php while( have_posts() ): the_post(); ?>
            <div class="col resources--grid-item">
-             <divclass="staff-card resources--item-container">
+             <div class="staff-card resources--item-container">
 
                <?php if( has_post_thumbnail() ): ?>
                  <div class="resources--item-image">
