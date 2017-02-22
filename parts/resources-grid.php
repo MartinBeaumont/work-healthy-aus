@@ -7,7 +7,7 @@ if( have_posts() ):
      <div class="col-12">
        <div class="sm-block-grid-1 block-grid-3">
          <?php while( have_posts() ): the_post(); ?>
-           <a href="<?php the_permalink();?>" class="col resources--grid-item">
+           <div class="col resources--grid-item">
              <div class="staff-card resources--item-container">
 
                <?php if( has_post_thumbnail() ): ?>
@@ -20,7 +20,9 @@ if( have_posts() ):
 
                <div class="staff-card--details">
                  <h3 class="staff-card--name">
-                   <?php the_title(); ?>
+                   <a href="<?php the_permalink();?>" title="<?php the_title();?>">
+                     <?php the_title(); ?>
+                   </a>
                  </h3>
                  <span class="staff-card--title">
                    <?php
@@ -53,7 +55,7 @@ if( have_posts() ):
                </div>
 
              </div>
-           </a>
+           </div>
          <?php endwhile;?>
        </div>
      </div>
