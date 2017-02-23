@@ -72,32 +72,6 @@ jQuery( document ).ready(function( $ ) {
     ]
   });
 
-  // Sticky Sidebar
-  if( $('body').hasClass('page-template-goal') ){
-    var waypoint = new Waypoint({
-      element: document.getElementById('service-sidebar'),
-      handler: function(direction) {
-
-        // get sidebar width initially
-        var $sidebar_width = $('#service-sidebar').width();
-
-        // only fire on desktop
-        if( window.innerWidth > 688 ){
-          if( direction === 'down' ){
-            $('#goal-sidebar-container').css({
-              'position': 'fixed',
-              'top':  0,
-              'width': $sidebar_width
-            });
-          } else{
-            $('#goal-sidebar-container').css('position', 'relative');
-          }
-        }
-
-      }
-    });
-  }
-
 
   // Add Search
   $('#menu-utility').append('<li><a href="#" id="search-icon"><i class="fa fa-search"></i> Search</a></li>');
@@ -124,7 +98,7 @@ jQuery( document ).ready(function( $ ) {
     $('.resource-download').css('display','none');
   }
 
-// end dom ready 
+// end dom ready
 });
 
 /*
