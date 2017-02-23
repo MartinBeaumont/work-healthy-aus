@@ -29,7 +29,7 @@
   </div>
 </header>
 
-<div id="search-panel" class="search-container">
+<div id="search-panel" class="search-container hide">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
