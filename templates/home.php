@@ -5,7 +5,8 @@ get_template_part('parts/home-header');
 
 get_template_part('parts/home-hero');
 
-get_template_part('parts/home-buckets');
+// Removed for quick launch
+//get_template_part('parts/home-buckets');
 
 get_template_part('parts/stat-slider');
 
