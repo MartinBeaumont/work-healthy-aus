@@ -7,9 +7,9 @@ if( have_rows('stat_slider') ):
   <div class="row">
     <div class="col-10 sm-col-9 col-centered">
 
-      <h2 class="text-center">
+      <h1 class="text-center">
         <?php the_field('stat_slider_headline'); ?>
-      </h2>
+      </h1>
 
       <div id="stat-slider">
         <?php while( have_rows('stat_slider') ): the_row(); ?>
