@@ -74,7 +74,7 @@ jQuery( document ).ready(function( $ ) {
 
 
   // Add Search
-  $('#menu-utility').append('<li><a href="#" id="search-icon"><i class="fa fa-search"></i> Search</a></li>');
+  //$('#menu-utility').append('<li><a href="#" id="search-icon"><i class="fa fa-search"></i> Search</a></li>');
 
   // Search Icon on Click
   $('#search-icon').on('click', function(){
