@@ -43,6 +43,13 @@ endif; wp_reset_postdata();
     <div id="service-sidebar" class="col-4">
       <div id="goal-sidebar-container">
         <aside class="wha-sidebar">
+          <?php if( get_field('sidebar_icon') ): ?>
+            <div class="row">
+              <div class="col-12">
+                <img src="<?php the_field('sidebar_icon');?>" alt="" class="wha-sidebar-icon">
+              </div>
+            </div>
+          <?php endif; ?>
           <nav>
             <ul>
                 <?php foreach ($service_posts as $service_post) { ?>
