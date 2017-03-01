@@ -45,7 +45,7 @@
     </div>
     <div class="sm-col-6 col-4 text-right">
       <span>
-        Site by <a href="https://factor1studios.com/" class="factor1">factor1</a>
+        Site by <a href="https://factor1studios.com/" target="_blank" class="factor1">factor1</a>
       </span>
     </div>
   </div>
