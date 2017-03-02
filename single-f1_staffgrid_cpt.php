@@ -22,13 +22,12 @@ get_header();
       </div>
       <div class="col-8 staff-single-columns">
         <?php the_field('right_column'); ?>
+        <h3>
+          Bio
+        </h3>
+        <?php the_field('left_column'); ?>
       </div>
     </div>
-  <div class="row staff-single-columns">
-    <div class="col-12">
-      <?php the_field('left_column'); ?>
-    </div>
-  </div>
 </section>
 
 <?php
