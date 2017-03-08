@@ -5,20 +5,19 @@ get_template_part('parts/home-header');
 
 get_template_part('parts/home-hero');
 
-// Removed for quick launch
-//get_template_part('parts/home-buckets');
+get_template_part('parts/home-buckets');
 
 get_template_part('parts/stat-slider');
 
 get_template_part('parts/video-row');
 
-// $page_id = get_queried_object_id();
-//
-// if( get_field('cta_content', $page_id) ):
-//
-//   get_template_part('parts/cta');
-//
-// endif;
+$page_id = get_queried_object_id();
+
+if( get_field('cta_content', $page_id) ):
+
+  get_template_part('parts/cta');
+
+endif;
 
 get_template_part('parts/industry-slider');
 
